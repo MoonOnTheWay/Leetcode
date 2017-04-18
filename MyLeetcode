@@ -10,7 +10,7 @@
 动态规划						
 174	Dungeon Game	动态规划。从右下角到左上角	Hard	http://mp.weixin.qq.com/s/Zkir5lVALEaINd8YKBKqpw		
 401	Binary Watch	第一次回溯法！！做了挺久，记住这题，典型案例；位操作	Easy			
-131	 Palindrome Partitioning	回溯法，要记得Backtrack之后的恢复步骤！！尤其是对ArrayList； resultList.add(new ArrayList<>(currentList)); //这步不能错写成 resultList.add(currentList); 递归；动规	Medium	http://mp.weixin.qq.com/s/-Z1ngUN_WzorieouPPGWoQ		
+131	Palindrome Partitioning	回溯法，要记得Backtrack之后的恢复步骤！！尤其是对ArrayList； resultList.add(new ArrayList<>(currentList)); //这步不能错写成 resultList.add(currentList); 递归；动规	Medium	http://mp.weixin.qq.com/s/-Z1ngUN_WzorieouPPGWoQ		
 78	Subsets	回溯法：不需要等到最后一个结点再add，每个枝都需要返回add； 二进制法	Medium	http://mp.weixin.qq.com/s/1XlzdPoZVhE0kUVT6rODPA		
 90	Subsets II	if(i > start && nums[i] == nums[i - 1]) continue; //i>start是为了保留每个根节点的第一根树枝，之后的其他重复树枝就直接剪掉	Medium			
 46	Permutations	全排列。方法一：回溯法 复杂度O(n!)。方法二：复杂度O(n^3)		https://leetcode.com/problems/permutations/#/solutions		
