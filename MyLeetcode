@@ -73,6 +73,8 @@ BFS
 
 DFS						
 98	Validate Binary Search Tree	书上也有这题。三种解法！其中一种Iterative的方法是由In-order的iterative solution推广而来的。解法一涉及到java对象传递，min = root相当于min = new TreeNode(root)，改变了原来的地址引用，所以原来的引用对应的值不变，结果不对	Medium	http://mp.weixin.qq.com/s/LiQpm6LdLgdKi_qm8zB_zw	 java对象值传递和对象传递的总结 http://blog.csdn.net/beyond667/article/details/7849337	http://stackoverflow.com/questions/40480/is-java-pass-by-reference-or-pass-by-value
+230	Kth Smallest Element in a BST	Solution 1: DFS In-Order Iterative。Solution 2: DFS In-Order Recursive。Solution 3: Binary Search，和书上C4_Q11_RandomNode很像。      Follow-up: If we could add a count field in the BST node class, it will take O(n) time when we calculate the count value for the whole tree, but after that, it will take O(logn) time when insert/delete a node or calculate the kth smallest element.	Medium			
+114	Flatten Binary Tree to Linked List	Four Solutions！多复习！	Medium			
 
 						
 				
