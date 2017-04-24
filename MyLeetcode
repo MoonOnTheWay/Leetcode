@@ -76,6 +76,10 @@ DFS
 230	Kth Smallest Element in a BST	Solution 1: DFS In-Order Iterative。Solution 2: DFS In-Order Recursive。Solution 3: Binary Search，和书上C4_Q11_RandomNode很像。      Follow-up: If we could add a count field in the BST node class, it will take O(n) time when we calculate the count value for the whole tree, but after that, it will take O(logn) time when insert/delete a node or calculate the kth smallest element.	Medium			
 114	Flatten Binary Tree to Linked List	Four Solutions！多复习！	Medium		
 547	Friend Circles	"方法一.复习Union-Find！ 这个问题还可以换个说法：找出Tree的个数。set the unvisited node as the root, and find the whole tree rooted at it, in the process, set all the nodes in this tree as visited  方法二：BFS 方法三： DFS"	Medium	http://blog.csdn.net/dm_vincent/article/details/7655764		
+332	Reconstruct Itinerary	hierholzers算法，欧拉路径：a trail which visits every edge exactly once	Medium	http://www.geeksforgeeks.org/hierholzers-algorithm-directed-graph/	1.ArrayList是实现了基于动态数组的数据结构，LinkedList基于链表的数据结构。  2.对于随机访问get和set，ArrayList觉得优于LinkedList，因为LinkedList要移动指针。 3.对于新增和删除操作add和remove，LinedList比较占优势，因为ArrayList要移动数据。	
+108	Convert Sorted Array to Binary Search Tree	递归，比较简单，都属于那一类的	Easy			
+494	Target Sum	第一个答案的方法！sum(P) = (target + sum(nums)) / 2。然后转化为求和为某个值的subset的个数	Medium			
+416	Partition Equal Subset Sum	和494思路一样，求和为某个值的subset是否存在	Medium			
 
 						
 				
