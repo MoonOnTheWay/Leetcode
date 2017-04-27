@@ -22,6 +22,10 @@
 343	Integer Break	多种方法，值得研究。自顶向下和自底向上，数学解法	Medium	http://mp.weixin.qq.com/s?__biz=MzAwMDk1MTUyNw==&mid=2247483903&idx=1&sn=7547ab490ba22d4a119eeb30e767b65f&chksm=9ae05477ad97dd6130b3d4b3f543545b4d2d7d5336e738fd6556c5fa3342fd5fc1e2ceea5772&scene=21#wechat_redirect		
 139	Word Break	自己仿照140改的做法，也用HashMap缓存。本来用ArrayList缓存，和它的contains方法，但超时了。然后改成HashMap通过，Beat 80%	Medium	http://mp.weixin.qq.com/s?__biz=MzAwMDk1MTUyNw==&mid=2247483885&idx=1&sn=779980700a570e59cfd79fc2a16f92c1&chksm=9ae05465ad97dd732bbc2bc3b48f6a82f0fa8a337fe0020db99e1ebb98ba8d70479183674928&scene=21#wechat_redirect		
 140	Word Break II	DFS,用HashMap缓存已经查找过的路径。 注意：不需要把result作为参数传进来，直接设置一个Old_result,一个New_result	Hard	http://mp.weixin.qq.com/s/EEICpFV0icweBDC8vJTqlA		
+70				http://mp.weixin.qq.com/s/C22y-pCAS4Zahkds6T8f3g		
+523				http://mp.weixin.qq.com/s?__biz=MzAwMDk1MTUyNw==&mid=2247484808&idx=1&sn=7720cc96361903921659f75113d084f7&chksm=9ae05000ad97d916094b26749fe273453314663070192c88f9c72307c769624107820fd6b6fc&mpshare=1&scene=1&srcid=0426tM9zglNiIHcpNClS46vX#rd		
+338				http://mp.weixin.qq.com/s/c_yLkUSbkR4O3DsrKGwNgw		
+516						
 
 贪心算法						
 122	Best Time to Buy and Sell Stock II	贪心。题目有点绕，其实很简单。读懂题很重要	Easy			
