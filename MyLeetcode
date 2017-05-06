@@ -30,7 +30,7 @@
 95	Unique Binary Search Trees II	自己仿照上一题的思路改写的答案，Beat 87%，相当于加上了缓存，但要对缓存的结果进行修改；而答案一的解法就是普通的递归解法，没有加缓存	Medium			
 416	Partition Equal Subset Sum	这题DFS那章做过。dp[i] = dp[i] || dp[i-num];	Medium			
 53	Maximum Subarray	自己做出来的，in-place solution,O(n)	Easy			
-472	Concatenated Words	方法一：139. Word Break的延伸。自己的解法报错；方法二：Trie树	Hard			
+472	Concatenated Words	方法一：139. Word Break的延伸。自己的解法报错；方法二：Trie树。使用hash：建立hash的复杂度为O(n * len), 查询的复杂度为O(n * len^2)；使用Trie：建立Trie的复杂度为O(n * len), 查询的复杂度为O(n * len)	Hard	http://blog.csdn.net/hackbuteer1/article/details/7964147				
 
 贪心算法						
 122	Best Time to Buy and Sell Stock II	贪心。题目有点绕，其实很简单。读懂题很重要	Easy			
