@@ -24,7 +24,13 @@
 140	Word Break II	DFS,用HashMap缓存已经查找过的路径。 注意：不需要把result作为参数传进来，直接设置一个Old_result,一个New_result	Hard	http://mp.weixin.qq.com/s/EEICpFV0icweBDC8vJTqlA		
 70	Climbing Stairs	斐波拉契数列，自顶向下和自底向上	Easy	http://mp.weixin.qq.com/s/C22y-pCAS4Zahkds6T8f3g
 523	Continuous Subarray Sum	自己用了HashSet而不是HashMap，效率更高。边界条件太多，要自己想case！很多次才通过。把k=0和k=1分开处理，防止出错	Medium	http://mp.weixin.qq.com/s?__biz=MzAwMDk1MTUyNw==&mid=2247484808&idx=1&sn=7720cc96361903921659f75113d084f7&chksm=9ae05000ad97d916094b26749fe273453314663070192c88f9c72307c769624107820fd6b6fc&mpshare=1&scene=1&srcid=0426tM9zglNiIHcpNClS46vX#rd
-338	Counting Bits	找规律，f(n) = f(n/2) + n % 2	Medium	http://mp.weixin.qq.com/s/c_yLkUSbkR4O3DsrKGwNgw						
+338	Counting Bits	找规律，f(n) = f(n/2) + n % 2	Medium	http://mp.weixin.qq.com/s/c_yLkUSbkR4O3DsrKGwNgw	
+516	Longest Palindromic Subsequence	找规律，if s.charAt(i) == s.charAt(j),dp[i][j] = dp[i+1][j-1] + 2; else dp[i][j] = max{dp[i+1][j], dp[i][j-1]}	Medium			
+96	Unique Binary Search Trees	"G(n) = G(0) * G(n - 1) + G(1) * G(n - 2) *...* G(n - 1) * G(0) ;The number of BST n should be the number of BSTS rooted at 0 + rooted at 1 +... ;The number of BSTs rooted at i should be the Cartesian Product(笛卡尔乘积) of BST i-1 and BST n-i"	Medium			
+95	Unique Binary Search Trees II	自己仿照上一题的思路改写的答案，Beat 87%，相当于加上了缓存，但要对缓存的结果进行修改；而答案一的解法就是普通的递归解法，没有加缓存	Medium			
+416	Partition Equal Subset Sum	这题DFS那章做过。dp[i] = dp[i] || dp[i-num];	Medium			
+53	Maximum Subarray	自己做出来的，in-place solution,O(n)	Easy			
+472	Concatenated Words	方法一：139. Word Break的延伸。自己的解法报错；方法二：Trie树	Hard			
 
 贪心算法						
 122	Best Time to Buy and Sell Stock II	贪心。题目有点绕，其实很简单。读懂题很重要	Easy			
