@@ -94,6 +94,7 @@ DFS
 分治算法						
 241	Different Ways to Add Parentheses	（记得用hashmap缓存结果！）记录运算符的下标，然后对于每一个运算符，都可以将当前的表达式分成左右两部分：将左右两部分的数字进行组合，就可以得到当前递归的答案集合‘如果当前表达式没有运算符，则返回当前表达式的数字。	Medium	http://mp.weixin.qq.com/s?__biz=MzAwMDk1MTUyNw==&mid=2247484844&idx=1&sn=2d9d8a78ecf27258d5f7223b7b95d77a&chksm=9ae05024ad97d9324f394474e5bebaa5c13ed4bb77c6255825de62e2f7bf4cd2f1c5e585a7e4&mpshare=1&scene=23&srcid=0502YuXSifSbQf1F7f2VAwwv#rd	分治法 http://blog.jobbole.com/83944/	
 4	Median of Two Sorted Arrays	经典难题，Algorithms上面也有。二分法，也是分治法思想。Time: O(log(min(m, n)))	Hard	http://mp.weixin.qq.com/s?__biz=MzAwMDk1MTUyNw==&mid=2247484853&idx=1&sn=20c8931836c07bdbdb6556aecbbd0cdf&chksm=9ae0503dad97d92b1062193a0057ca0ba64d4709ffe43791d6e1bfbe8986fd4a60cdb1ed7040&mpshare=1&scene=23&srcid=05069Iquuw2CJ7IMguOJ3gsQ#rd		
+312	Burst Balloons	分治法的反向思维！见注释。可以有两种实现方法：自顶向下递归加缓存，和自底向上循环。很经典！其中，cache[left][right]和dp[left][right]都表示以left和right为边界的区间内最大的得分	Hard			
 
 数学						
 67	Add Binary	用StringBuilder提高效率	Easy			
