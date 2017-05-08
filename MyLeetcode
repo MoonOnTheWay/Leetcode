@@ -91,6 +91,8 @@ DFS
 494	Target Sum	第一个答案的方法！sum(P) = (target + sum(nums)) / 2。然后转化为求和为某个值的subset的个数	Medium			
 416	Partition Equal Subset Sum	和494思路一样，求和为某个值的subset是否存在	Medium			
 
+分治算法						
+
 数学						
 67	Add Binary	用StringBuilder提高效率	Easy			
 						
