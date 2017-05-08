@@ -92,6 +92,7 @@ DFS
 416	Partition Equal Subset Sum	和494思路一样，求和为某个值的subset是否存在	Medium			
 
 分治算法						
+241	Different Ways to Add Parentheses	（记得用hashmap缓存结果！）记录运算符的下标，然后对于每一个运算符，都可以将当前的表达式分成左右两部分：将左右两部分的数字进行组合，就可以得到当前递归的答案集合‘如果当前表达式没有运算符，则返回当前表达式的数字。	Medium	http://mp.weixin.qq.com/s?__biz=MzAwMDk1MTUyNw==&mid=2247484844&idx=1&sn=2d9d8a78ecf27258d5f7223b7b95d77a&chksm=9ae05024ad97d9324f394474e5bebaa5c13ed4bb77c6255825de62e2f7bf4cd2f1c5e585a7e4&mpshare=1&scene=23&srcid=0502YuXSifSbQf1F7f2VAwwv#rd	分治法 http://blog.jobbole.com/83944/	
 
 数学						
 67	Add Binary	用StringBuilder提高效率	Easy			
