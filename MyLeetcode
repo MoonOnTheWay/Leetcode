@@ -6,6 +6,7 @@
 154	Find Minimum in Rotated Sorted Array II	有重复元素，mid和right相等时，right--	Hard	http://mp.weixin.qq.com/s/OHtYWfCm5AD5nGUr5HD5gw
 300	Longest Increasing Subsequence	方法一：动态规划。方法二：创建一个tails数组，在tails中二分查找；注意：可能有重复数字！！！	Medium	https://leetcode.com/problems/longest-increasing-subsequence/#/description		
 368	Largest Divisible Subset	和最长公共子序列类似	Medium	http://mp.weixin.qq.com/s?__biz=MzAwMDk1MTUyNw==&mid=2247483862&idx=1&sn=39101dd4352e731294eac670cee02018&chksm=9ae0545ead97dd48149a1bcaa344290064d4782ee9afeba7496f1be551b56a0cd015cbacf7d5&scene=21#wechat_redirect		
+35	Search Insert Position	二分查找的套路1	Easy			
 
 动态规划						
 174	Dungeon Game	动态规划。从右下角到左上角	Hard	http://mp.weixin.qq.com/s/Zkir5lVALEaINd8YKBKqpw		
