@@ -98,6 +98,8 @@ DFS
 
 数学						
 67	Add Binary	用StringBuilder提高效率	Easy			
-						
+541	Reverse String II	//Solution 1: O(n), but we need to copy every element in the string.//Solution 2: O(n), but we only need to swap n/2 elements in the string, while leaving the other elements untouched.	Easy			
+
+					
 
 				
