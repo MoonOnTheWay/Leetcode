@@ -107,8 +107,7 @@ Graph
 332	Reconstruct Itinerary	hierholzers算法，欧拉路径：a trail which visits every edge exactly once	Medium	http://www.geeksforgeeks.org/hierholzers-algorithm-directed-graph/	1.ArrayList是实现了基于动态数组的数据结构，LinkedList基于链表的数据结构。  2.对于随机访问get和set，ArrayList觉得优于LinkedList，因为LinkedList要移动指针。 3.对于新增和删除操作add和remove，LinedList比较占优势，因为ArrayList要移动数据。	
 399	Evaluate Division	//这题其实是一个在双向图中搜索边的问题    //graph的题都需要先构建图，用hashmap，本题还涉及每条边的权重，所以要额外增加一个hashmap存储权重，这点看了答案才想到    //然后对于要搜索的每条边，都进行深度优先搜索dfs    //对于图来说，dfs需要设置visited，防止重复搜索某条边，比如a-b-a-    //dfs函数自己写的，比答案简单，不需要传递value值	Medium			
 310	Minimum Height Trees	//BFS，我用了queue来实现，答案是用两个arraylist    //受path graph的启发，我们从所有叶子开始，同时向前移动，直到所有叶子汇聚在一点或者两点    //当把每一个叶子移到它的parent位置时，需要把parent的该叶子删除，如果此时parent只剩一个叶子，那么把parent加入叶子中    //用HashSet存储和每个索引相连的路径，因为需要频繁地查找和删除操作。    //返回hashset的值用iterator，随机返回一个。但对于叶子结点，只能返回一个值    	Medium	HashSet是泛型类，不能直接建array。只能用ArrayList。HashSet<Integer>[] paths = new HashSet<Integer>[n]; error: generic array creation，	Collections.singletonList(0)	
-207	Course Schedule	寻找图中有没有环。1、BFS解法。拓扑排序，环无法被去掉，所以count会小于结点数。2、DFS解法。对每一个结点依次进行深度搜索，如果回到出发点，则证明有环。改进的DFS解法！效率最高！beat 99.89%：visited不再是简单的true or false，而有0,1,2三个值：0表示未被访问，1表示正在被访问的当前路径上，2表示已经被访问并且被证明不在环上。		拓扑排序：http://blog.csdn.net/changyuanchn/article/details/17067349	ArrayList[] paths = new ArrayList[numCourses];  //error: cannot create array with '<>'，这里不能加<>。遍历的时候，(int)paths[root].get(i)强制类型转换！	
-
-					
+207	Course Schedule	寻找图中有没有环。1、BFS解法。拓扑排序，环无法被去掉，所以count会小于结点数。2、DFS解法。对每一个结点依次进行深度搜索，如果回到出发点，则证明有环。改进的DFS解法！效率最高！beat 99.89%：visited不再是简单的true or false，而有0,1,2三个值：0表示未被访问，1表示正在被访问的当前路径上，2表示已经被访问并且被证明不在环上。	Medium	拓扑排序：http://blog.csdn.net/changyuanchn/article/details/17067349	ArrayList[] paths = new ArrayList[numCourses];  //error: cannot create array with '<>'，这里不能加<>。遍历的时候，(int)paths[root].get(i)强制类型转换！或者：ArrayList<Integer>[] paths = new ArrayList[numCourses]，不需要强制类型转换	
+210	Course Schedule II	仿照207，改进的DFS解法效率最高。但要注意：207中paths[pre[0]].add(pre[1])和paths[pre[1]].add(pre[0])都对，但本题只能是paths[pre[0]].add(pre[1])。因为本题要求的路径其实就是拓扑排序的定义，要把优先级最高的结点放在前面，所以从后置课向前置课进行遍历，遍历到尽头（或尽头的结点都已经被加入路径）时，即是当前优先级最高的前置课	Medium								
 
 				
