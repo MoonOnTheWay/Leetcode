@@ -90,7 +90,9 @@ DFS
 108	Convert Sorted Array to Binary Search Tree	递归，比较简单，都属于那一类的	Easy			
 494	Target Sum	第一个答案的方法！sum(P) = (target + sum(nums)) / 2。然后转化为求和为某个值的subset的个数	Medium			
 416	Partition Equal Subset Sum	和494思路一样，求和为某个值的subset是否存在	Medium		
-112	Path Sum	自己做的	Easy			
+112	Path Sum	自己做的	Easy	
+113	Path Sum II	自己做的。有两处需要remove，不要忘记！记住：回溯问题，有add必有remove，必须对称！	Medium			
+
 
 
 分治算法						
