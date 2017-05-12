@@ -35,7 +35,8 @@
 198	House Robber	max(i) = Max{max(i - 1), nums[i] + max(i - 2)}从左往右，最右边即为我们需要的	Easy			
 279	Perfect Squares	dp[n] = Min{ dp[n - i*i] + 1 },  n - i*i >=0 && i >= 1	Medium			
 152	Maximum Product Subarray	//O(n)    //从左往右遍历时，需要记录每个时刻的绝对值最大的两个数（一正一负），这两个数的可能有：从当前位置开始、从当前位置的前面连续到当前    //所以最终的子序列一定是连续的。	Medium			
-303	Range Sum Query - Immutable	完成一个类。注意输入可能是空数组	Easy			
+303	Range Sum Query - Immutable	完成一个类。注意输入可能是空数组	Easy		
+304	Range Sum Query 2D - Immutable	自己的解法是受303启发，每行都是一个一维数组，最后把每行加起来即可。答案的方法更巧妙一点，用sum[i][j]表示从(0,0)到(i,j)的矩形中的元素和。另外多加了一行和一列，用来避免边界判断。可以注意一下	Medium			
 
 贪心算法						
 122	Best Time to Buy and Sell Stock II	贪心。题目有点绕，其实很简单。读懂题很重要	Easy			
