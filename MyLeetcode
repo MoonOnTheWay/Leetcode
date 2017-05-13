@@ -7,6 +7,7 @@
 300	Longest Increasing Subsequence	方法一：动态规划。方法二：创建一个tails数组，在tails中二分查找；注意：可能有重复数字！！！	Medium	https://leetcode.com/problems/longest-increasing-subsequence/#/description		
 368	Largest Divisible Subset	和最长公共子序列类似	Medium	http://mp.weixin.qq.com/s?__biz=MzAwMDk1MTUyNw==&mid=2247483862&idx=1&sn=39101dd4352e731294eac670cee02018&chksm=9ae0545ead97dd48149a1bcaa344290064d4782ee9afeba7496f1be551b56a0cd015cbacf7d5&scene=21#wechat_redirect		
 35	Search Insert Position	二分查找的套路1	Easy			
+410	Split Array Largest Sum	    //这题非常巧妙，运用二分查找    //答案一定在[max, sum]中取得，所以检验mid是否符合要求：    //从左往右累加nums，如果和大于mid，则“切断”，从当前开始从零累加。这样每个切下的断的和都是小于mid的最大值。    //若count比m大，说明mid选小了，因为已经尽可能大地去切断，却仍然多出了，所以left = mid + 1    //若count比m小，说明mid选大了，不够切m段，所以right = mid - 1;   //若count等于m，说明mid可能选大了，因为我们要求最小的mid，所以right = mid - 1    //最终答案是left	Hard			
 
 动态规划						
 174	Dungeon Game	动态规划。从右下角到左上角	Hard	http://mp.weixin.qq.com/s/Zkir5lVALEaINd8YKBKqpw		
