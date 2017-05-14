@@ -104,6 +104,7 @@ DFS
 139	Word Break	自己仿照140改的做法，也用HashMap缓存。本来用ArrayList缓存，和它的contains方法，但超时了。然后改成HashMap通过，Beat 80%	Medium	http://mp.weixin.qq.com/s?__biz=MzAwMDk1MTUyNw==&mid=2247483885&idx=1&sn=779980700a570e59cfd79fc2a16f92c1&chksm=9ae05465ad97dd732bbc2bc3b48f6a82f0fa8a337fe0020db99e1ebb98ba8d70479183674928&scene=21#wechat_redirect		
 140	Word Break II	DFS,用HashMap缓存已经查找过的路径。 注意：不需要把result作为参数传进来，直接设置一个Old_result,一个New_result	Hard	http://mp.weixin.qq.com/s/EEICpFV0icweBDC8vJTqlA		
 491	Increasing Subsequences	和前面几题一个套路：有重复元素的排列问题，共同思路是：同一层上，相同元素只能出现一次。同一个树枝上，相同元素可以同时出现。  //输入的数组不是递增的，也不能改变原来的顺序，所以不能sort，这导致重复的元素不能相邻，检查重复比较麻烦//Solution 1    //最简单的做法就是用HashSet存储所有结果，利用HashSet没有重复key的特点    //但这种做法相当于没有剪枝操作，效率不高     //Solution 2    //仿照90 SubSet II的思路    //beat 99.43%	Medium			
+526	Beautiful Arrangement	1.自己的解法：用hashset记录访问过的节点。2.解法二：用数组代替hashset。3.对解法二改进：把从前往后改成从后往前。beat 95.48%！因为这样可以避免搜索过深：从前往后的话，前面的索引值比较小，容易被整除，所以会一直向下搜索。从后往前则可以在比较浅的位置中断错误路径。4.解法四：用swap函数代替visited。好处是完全避免了是否重复的判断，效率更高,beat 98%	Medium			
 
 分治算法						
 241	Different Ways to Add Parentheses	（记得用hashmap缓存结果！）记录运算符的下标，然后对于每一个运算符，都可以将当前的表达式分成左右两部分：将左右两部分的数字进行组合，就可以得到当前递归的答案集合‘如果当前表达式没有运算符，则返回当前表达式的数字。	Medium	http://mp.weixin.qq.com/s?__biz=MzAwMDk1MTUyNw==&mid=2247484844&idx=1&sn=2d9d8a78ecf27258d5f7223b7b95d77a&chksm=9ae05024ad97d9324f394474e5bebaa5c13ed4bb77c6255825de62e2f7bf4cd2f1c5e585a7e4&mpshare=1&scene=23&srcid=0502YuXSifSbQf1F7f2VAwwv#rd	分治法 http://blog.jobbole.com/83944/	
