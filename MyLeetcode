@@ -87,7 +87,22 @@ DFS
 416	Partition Equal Subset Sum	和494思路一样，求和为某个值的subset是否存在	Medium		
 112	Path Sum	自己做的	Easy	
 113	Path Sum II	自己做的。有两处需要remove，不要忘记！记住：回溯问题，有add必有remove，必须对称！	Medium			
-437	Path Sum III	两种解法，其中优化解法复杂度O(n)，想了很久，解释见注释。书上也有这题。记住 ！	Easy(标错了吧)			
+437	Path Sum III	两种解法，其中优化解法复杂度O(n)，想了很久，解释见注释。书上也有这题。记住 ！	Easy(标错了吧)	
+
+回溯法						
+401	Binary Watch	第一次回溯法！！做了挺久，记住这题，典型案例；位操作	Easy			
+131	 Palindrome Partitioning	回溯法，要记得Backtrack之后的恢复步骤！！尤其是对ArrayList； resultList.add(new ArrayList<>(currentList)); //这步不能错写成 resultList.add(currentList); 递归；动规	Medium	http://mp.weixin.qq.com/s/-Z1ngUN_WzorieouPPGWoQ		
+78	Subsets	回溯法：不需要等到最后一个结点再add，每个枝都需要返回add； 二进制法	Medium	http://mp.weixin.qq.com/s/1XlzdPoZVhE0kUVT6rODPA		
+90	Subsets II	if(i > start && nums[i] == nums[i - 1]) continue; //i>start是为了保留每个根节点的第一根树枝，之后的其他重复树枝就直接剪掉	Medium			
+46	Permutations	全排列。方法一：回溯法 复杂度O(n!)。方法二：复杂度O(n^3)	Medium	https://leetcode.com/problems/permutations/#/solutions	http://blog.csdn.net/linhuanmars/article/details/21569031	
+47	Permutations II	增加一个isUsed数组，判断结点是否被用过。//对于和前一个结点一样的结点，判断前一个结点是否被used：如果是，说明当前结点和前一个结点在同一个树枝上；否则，说明它们是同一个根的两个分叉，需要剪去当前枝。if(i > 0 && nums[i] == nums[i - 1] && !isUsed[i - 1]) continue;  	Medium			
+39	Combination Sum	要记录start的位置，每次从start开始，避免重复	Medium			
+40	Combination Sum II	和Subsets II类似	Medium			
+89	Gray Code	位操作。^ | >> <<	Medium			
+79	Word Search	DFS,BFS。做了好久！isVisited = true的位置，以及要恢复为false	Medium	http://mp.weixin.qq.com/s/c53OEvJjHDh4gEr6IYOFGA    	http://www.java2blog.com/2015/12/depth-first-search-in-java.html	
+343	Integer Break	多种方法，值得研究。自顶向下和自底向上，数学解法	Medium	http://mp.weixin.qq.com/s?__biz=MzAwMDk1MTUyNw==&mid=2247483903&idx=1&sn=7547ab490ba22d4a119eeb30e767b65f&chksm=9ae05477ad97dd6130b3d4b3f543545b4d2d7d5336e738fd6556c5fa3342fd5fc1e2ceea5772&scene=21#wechat_redirect		
+139	Word Break	自己仿照140改的做法，也用HashMap缓存。本来用ArrayList缓存，和它的contains方法，但超时了。然后改成HashMap通过，Beat 80%	Medium	http://mp.weixin.qq.com/s?__biz=MzAwMDk1MTUyNw==&mid=2247483885&idx=1&sn=779980700a570e59cfd79fc2a16f92c1&chksm=9ae05465ad97dd732bbc2bc3b48f6a82f0fa8a337fe0020db99e1ebb98ba8d70479183674928&scene=21#wechat_redirect		
+140	Word Break II	DFS,用HashMap缓存已经查找过的路径。 注意：不需要把result作为参数传进来，直接设置一个Old_result,一个New_result	Hard	http://mp.weixin.qq.com/s/EEICpFV0icweBDC8vJTqlA		
 
 分治算法						
 241	Different Ways to Add Parentheses	（记得用hashmap缓存结果！）记录运算符的下标，然后对于每一个运算符，都可以将当前的表达式分成左右两部分：将左右两部分的数字进行组合，就可以得到当前递归的答案集合‘如果当前表达式没有运算符，则返回当前表达式的数字。	Medium	http://mp.weixin.qq.com/s?__biz=MzAwMDk1MTUyNw==&mid=2247484844&idx=1&sn=2d9d8a78ecf27258d5f7223b7b95d77a&chksm=9ae05024ad97d9324f394474e5bebaa5c13ed4bb77c6255825de62e2f7bf4cd2f1c5e585a7e4&mpshare=1&scene=23&srcid=0502YuXSifSbQf1F7f2VAwwv#rd	分治法 http://blog.jobbole.com/83944/	
