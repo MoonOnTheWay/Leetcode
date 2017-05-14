@@ -11,19 +11,6 @@
 
 动态规划						
 174	Dungeon Game	动态规划。从右下角到左上角	Hard	http://mp.weixin.qq.com/s/Zkir5lVALEaINd8YKBKqpw		
-401	Binary Watch	第一次回溯法！！做了挺久，记住这题，典型案例；位操作	Easy			
-131	Palindrome Partitioning	回溯法，要记得Backtrack之后的恢复步骤！！尤其是对ArrayList； resultList.add(new ArrayList<>(currentList)); //这步不能错写成 resultList.add(currentList); 递归；动规	Medium	http://mp.weixin.qq.com/s/-Z1ngUN_WzorieouPPGWoQ		
-78	Subsets	回溯法：不需要等到最后一个结点再add，每个枝都需要返回add； 二进制法	Medium	http://mp.weixin.qq.com/s/1XlzdPoZVhE0kUVT6rODPA		
-90	Subsets II	if(i > start && nums[i] == nums[i - 1]) continue; //i>start是为了保留每个根节点的第一根树枝，之后的其他重复树枝就直接剪掉	Medium			
-46	Permutations	全排列。方法一：回溯法 复杂度O(n!)。方法二：复杂度O(n^3)		https://leetcode.com/problems/permutations/#/solutions		
-47	Permutations II	增加一个isUsed数组，判断结点是否被用过。//对于和前一个结点一样的结点，判断前一个结点是否被used：如果是，说明当前结点和前一个结点在同一个树枝上；否则，说明它们是同一个根的两个分叉，需要剪去当前枝。if(i > 0 && nums[i] == nums[i - 1] && !isUsed[i - 1]) continue;  				
-39	Combination Sum	要记录start的位置，每次从start开始，避免重复	Medium			
-40	Combination Sum II	和Subsets II类似	Medium			
-89	Gray Code	位操作。^ | >> <<	Medium			
-79	Word Search	DFS,BFS。做了好久！isVisited = true的位置，以及要恢复为false	Medium	http://mp.weixin.qq.com/s/c53OEvJjHDh4gEr6IYOFGA    	http://www.java2blog.com/2015/12/depth-first-search-in-java.html	
-343	Integer Break	多种方法，值得研究。自顶向下和自底向上，数学解法	Medium	http://mp.weixin.qq.com/s?__biz=MzAwMDk1MTUyNw==&mid=2247483903&idx=1&sn=7547ab490ba22d4a119eeb30e767b65f&chksm=9ae05477ad97dd6130b3d4b3f543545b4d2d7d5336e738fd6556c5fa3342fd5fc1e2ceea5772&scene=21#wechat_redirect		
-139	Word Break	自己仿照140改的做法，也用HashMap缓存。本来用ArrayList缓存，和它的contains方法，但超时了。然后改成HashMap通过，Beat 80%	Medium	http://mp.weixin.qq.com/s?__biz=MzAwMDk1MTUyNw==&mid=2247483885&idx=1&sn=779980700a570e59cfd79fc2a16f92c1&chksm=9ae05465ad97dd732bbc2bc3b48f6a82f0fa8a337fe0020db99e1ebb98ba8d70479183674928&scene=21#wechat_redirect		
-140	Word Break II	DFS,用HashMap缓存已经查找过的路径。 注意：不需要把result作为参数传进来，直接设置一个Old_result,一个New_result	Hard	http://mp.weixin.qq.com/s/EEICpFV0icweBDC8vJTqlA		
 70	Climbing Stairs	斐波拉契数列，自顶向下和自底向上	Easy	http://mp.weixin.qq.com/s/C22y-pCAS4Zahkds6T8f3g
 523	Continuous Subarray Sum	自己用了HashSet而不是HashMap，效率更高。边界条件太多，要自己想case！很多次才通过。把k=0和k=1分开处理，防止出错	Medium	http://mp.weixin.qq.com/s?__biz=MzAwMDk1MTUyNw==&mid=2247484808&idx=1&sn=7720cc96361903921659f75113d084f7&chksm=9ae05000ad97d916094b26749fe273453314663070192c88f9c72307c769624107820fd6b6fc&mpshare=1&scene=1&srcid=0426tM9zglNiIHcpNClS46vX#rd
 338	Counting Bits	找规律，f(n) = f(n/2) + n % 2	Medium	http://mp.weixin.qq.com/s/c_yLkUSbkR4O3DsrKGwNgw	
