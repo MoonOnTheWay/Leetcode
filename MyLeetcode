@@ -88,6 +88,7 @@ DFS
 112	Path Sum	自己做的	Easy	
 113	Path Sum II	自己做的。有两处需要remove，不要忘记！记住：回溯问题，有add必有remove，必须对称！	Medium			
 437	Path Sum III	两种解法，其中优化解法复杂度O(n)，想了很久，解释见注释。书上也有这题。记住 ！	Easy(标错了吧)	
+329	Longest Increasing Path in a Matrix	自己做出来的，开心。注意，DFS加缓存的时候，不要只考虑用hashmap。先考虑能否用数组，再考虑用hashmap	Hard			
 
 回溯法						
 401	Binary Watch	第一次回溯法！！做了挺久，记住这题，典型案例；位操作	Easy			
