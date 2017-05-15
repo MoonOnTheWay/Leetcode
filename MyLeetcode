@@ -13,6 +13,7 @@
 174	Dungeon Game	动态规划。从右下角到左上角	Hard	http://mp.weixin.qq.com/s/Zkir5lVALEaINd8YKBKqpw		
 70	Climbing Stairs	斐波拉契数列，自顶向下和自底向上	Easy	http://mp.weixin.qq.com/s/C22y-pCAS4Zahkds6T8f3g
 523	Continuous Subarray Sum	自己用了HashSet而不是HashMap，效率更高。边界条件太多，要自己想case！很多次才通过。把k=0和k=1分开处理，防止出错	Medium	http://mp.weixin.qq.com/s?__biz=MzAwMDk1MTUyNw==&mid=2247484808&idx=1&sn=7720cc96361903921659f75113d084f7&chksm=9ae05000ad97d916094b26749fe273453314663070192c88f9c72307c769624107820fd6b6fc&mpshare=1&scene=1&srcid=0426tM9zglNiIHcpNClS46vX#rd
+560	Subarray Sum Equals K	要用hashmap，不仅记录sum，还要记录每个sum出现的次数，因为可能有重复元素！	Medium			
 338	Counting Bits	找规律，f(n) = f(n/2) + n % 2	Medium	http://mp.weixin.qq.com/s/c_yLkUSbkR4O3DsrKGwNgw	
 516	Longest Palindromic Subsequence	找规律，if s.charAt(i) == s.charAt(j),dp[i][j] = dp[i+1][j-1] + 2; else dp[i][j] = max{dp[i+1][j], dp[i][j-1]}	Medium			
 96	Unique Binary Search Trees	"G(n) = G(0) * G(n - 1) + G(1) * G(n - 2) *...* G(n - 1) * G(0) ;The number of BST n should be the number of BSTS rooted at 0 + rooted at 1 +... ;The number of BSTs rooted at i should be the Cartesian Product(笛卡尔乘积) of BST i-1 and BST n-i"	Medium			
