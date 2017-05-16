@@ -32,6 +32,7 @@
 贪心算法		
 121	Best Time to Buy and Sell Stock 	如果延伸一下，给出的是当前价格和前一天价格的差价：{1, 7, 4, 11}, if he gives {0, 6, -3, 7}。用Kadane's Algorithm来解决	Easy			
 122	Best Time to Buy and Sell Stock II	贪心。题目有点绕，其实很简单。读懂题很重要	Easy			
+124	Best Time to Buy and Sell Stock III	很巧妙。设置四个参数，分别表示：买第一个后剩的钱，卖第一个后剩的钱，买第二个后剩的钱，卖第二个后剩的钱	Hard			
 357	Count Numbers with Unique Digits	排列组合找规律，可以递归	Medium	http://mp.weixin.qq.com/s?__biz=MzAwMDk1MTUyNw==&mid=2247483872&idx=1&sn=b649521a9a6c1e49a56974474c77b75b&chksm=9ae05468ad97dd7e8a00b5b15ba902fae4e565d413cb914d66fd8ccf3a4703af87b653032e82&scene=21#wechat_redirect		
 452	Minimum Number of Arrows to Burst Balloons	知识点：贪心算法；lamda表达式；Comparator接口。两种排序方法：按照左端点或右端点	Medium	http://mp.weixin.qq.com/s/iQcmIiD614-qWG7xSoDhlg    	http://m.jb51.net/article/48304.htm	
 455	Assign Cookies	复习贪心算法课件：贪心选择性质和最优子结构性质	Medium			
