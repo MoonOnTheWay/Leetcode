@@ -22,6 +22,7 @@
 53	Maximum Subarray	自己做出来的，in-place solution,O(n)	Easy			
 472	Concatenated Words	方法一：139. Word Break的延伸。自己的解法报错；方法二：Trie树。使用hash：建立hash的复杂度为O(n * len), 查询的复杂度为O(n * len^2)；使用Trie：建立Trie的复杂度为O(n * len), 查询的复杂度为O(n * len)	Hard	http://blog.csdn.net/hackbuteer1/article/details/7964147	使用Trie：因为当查询如字符串abc是否为某个字符串的前缀时，显然以b、c、d....等不是以a开头的字符串就不用查找了，这样迅速缩小查找的范围和提高查找的针对性	
 198	House Robber	max(i) = Max{max(i - 1), nums[i] + max(i - 2)}从左往右，最右边即为我们需要的	Easy			
+213	House Robber II	利用上题的函数，Math.max(rob(nums, 0, nums.length - 2), rob(nums, 1, nums.length - 1))。分为两种情况，选第一个和不选第一个	Medium			
 279	Perfect Squares	dp[n] = Min{ dp[n - i*i] + 1 },  n - i*i >=0 && i >= 1	Medium			
 152	Maximum Product Subarray	//O(n)    //从左往右遍历时，需要记录每个时刻的绝对值最大的两个数（一正一负），这两个数的可能有：从当前位置开始、从当前位置的前面连续到当前    //所以最终的子序列一定是连续的。	Medium			
 303	Range Sum Query - Immutable	完成一个类。注意输入可能是空数组	Easy		
