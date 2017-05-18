@@ -16,6 +16,7 @@
 560	Subarray Sum Equals K	要用hashmap，不仅记录sum，还要记录每个sum出现的次数，因为可能有重复元素！	Medium			
 338	Counting Bits	找规律，f(n) = f(n/2) + n % 2	Medium	http://mp.weixin.qq.com/s/c_yLkUSbkR4O3DsrKGwNgw	
 516	Longest Palindromic Subsequence	找规律，if s.charAt(i) == s.charAt(j),dp[i][j] = dp[i+1][j-1] + 2; else dp[i][j] = max{dp[i+1][j], dp[i][j-1]}	Medium			
+5	Longest Palindromic Substring	Solution 1: 仿照516，自底向上。效率较低。 Solution 2: 从左到右以每个字符为最长回文字符串的结尾，检查Length+2和Length+1的字符串是否是回文。 Solution 3: 从左到右以每个字符为回文字符串的中心，向两边扩展	Medium			
 96	Unique Binary Search Trees	"G(n) = G(0) * G(n - 1) + G(1) * G(n - 2) *...* G(n - 1) * G(0) ;The number of BST n should be the number of BSTS rooted at 0 + rooted at 1 +... ;The number of BSTs rooted at i should be the Cartesian Product(笛卡尔乘积) of BST i-1 and BST n-i"	Medium			
 95	Unique Binary Search Trees II	自己仿照上一题的思路改写的答案，Beat 87%，相当于加上了缓存，但要对缓存的结果进行修改；而答案一的解法就是普通的递归解法，没有加缓存	Medium			
 416	Partition Equal Subset Sum	这题DFS那章做过。dp[i] = dp[i] || dp[i-num];	Medium			
