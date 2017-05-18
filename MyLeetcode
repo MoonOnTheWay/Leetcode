@@ -74,8 +74,9 @@ Binary Tree
 215	Kth Largest Element in an Array	复习快速排序，partition，复杂度为O(n)，快排复杂度为O(nlogn)。也可以用priorityqueue，复杂度O(nlogk)	Medium	听下Binary Heap的网课		
 524	Longest Word in Dictionary through Deleting	"方法一：对字典排序，O(k * logk + n * k1 * l). k: size of d, k1 <= k, l: average length of strings in d。方法二：不排序，直接一一比较，记录最长的string, O(n * k * l). k: size of d, l: average length of strings in d"	Medium http://mp.weixin.qq.com/s?__biz=MzAwMDk1MTUyNw==&mid=2247484776&idx=1&sn=167c170cb4bfcca4237c7e12f8511740&chksm=9ae050e0ad97d9f6d319ad7d3792783313f82b816eb78aa7b7eaa1841ff160289454e770800b&mpshare=1&scene=1&srcid=0407jz2RkE3eU9Wo3KDmGr10#rd		
 164	Maximum Gap	"Bucket Sort 看懂解法并写出来不难，边界问题调bug调到死！不能把max加进来，因为：if(x == max) continue; //这步不加会导致数组越界：因为[min + k * gap, min + (k + 1) * gap)中k <= n-2, 而(max - min)/gap == n-1 maxGap不能是bucketMin[i] - bucketMax[i - 1], 因为bucketMax[i - 1]可能是空！所以要设一个previous记录上一个不为空的bucket的max值 Arrays.fill()"	Hard	"http://bookshadow.com/weblog/2014/12/14/what-is-the-difference-between-radix-sort-bucket-sort-and-counting-sort/ https://www.byvoid.com/zhs/blog/sort-radix"	"对于N个待排数据，M个桶，平均每个桶[N/M]个数据的桶排序平均时间复杂度为：O(N)+O(M*(N/M)*log(N/M))=O(N+N*(logN-logM))=O(N+N*logN-N*logM) = O(N + c), c = N*(logN - logM) 当N=M时，即极限情况下每个桶只有一个数据时。桶排序的最好效率能够达到O(N)。"	"Math.ceil() floor 向下取整 ceil  向上取整 round 则是4舍5入的计算"
-75	Sort Colors	原来right上的值可能为0或1，交换完之后i上的值变成0或1，需要再次检查！而原来left上的值只能为1，不需要检查	Medium			
+75	Sort Colors	参考排名第一的solution,非常简洁。思路是：对于2，和second交换，对于0，和zero交换，对于1，不操作	Medium			
 242	Valid Anagram	答案的方法很巧妙，mark	Easy			
+329	Longest Increasing Path in a Matrix	自己做出来的，开心。注意，DFS加缓存的时候，不要只考虑用hashmap。先考虑能否用数组，再考虑用hashmap	Hard			
 						
 BFS						
 542	01 Matrix	"DFS,没做出来……不剪枝的话会超时。剪枝效果也不会比BFS好，因为不能预先确定0的位置，可能会导致深度太深，以及重复计算。 答案思路：先确定0的位置，然后先把每个0周围四个位置的距离算好（1），再把每个1周围四个位置算好（2）……层层计算下去。BFS思想，用queue实现，先进先出"	Medium			
