@@ -127,6 +127,7 @@ DFS
 125	Valid Palindrome	Character.isLetterOrDigit()和Character.toLowerCase的用法！	Easy			
 43	Multiply Strings	大整数乘法，很巧妙 `num1[i] * num2[j]` will be placed at indices `[i + j`, `i + j + 1]` 	Medium			
 136	Single Number	Bit Manipulation. 两次^，得到0	Easy			
+88	Merge Sorted Array	双指针问题	Easy			
 
 链表Linked List						
 234	Palindrome Linked List	//Solution 1: 先通过fast和slow遍历一遍数组，再把右半部分反转   //Solution 2: beat 94.52%。reverse左半边，这样一次遍历就可以同时完成slow,fast的定位和左半边反转	Easy	链表反转，避免空指针操作！		
