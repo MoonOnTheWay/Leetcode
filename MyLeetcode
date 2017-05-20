@@ -131,6 +131,8 @@ DFS
 Array						
 88	Merge Sorted Array	双指针问题	Easy			
 189	Rotate Array	My Solution: Start from one element and keep rotating until we have rotated n different elements. Solution 2: Reverse the first n - k elements, the last k elements, and then all the n elements.	Easy			
+26	Remove Duplicates from Sorted Array		Easy			
+80	Remove Duplicates from Sorted Array II	和26一个套路。if(nums[i] != nums[count - 2])  nums[count++] = nums[i];   //注意: 不是和nums[i - 2]，而是和nums[count - 2]相比。因为count是待填入的位置，所以应该和这个位置前面的两个数不同   	Medium			
 		
 链表Linked List						
 234	Palindrome Linked List	//Solution 1: 先通过fast和slow遍历一遍数组，再把右半部分反转   //Solution 2: beat 94.52%。reverse左半边，这样一次遍历就可以同时完成slow,fast的定位和左半边反转	Easy	链表反转，避免空指针操作！		
