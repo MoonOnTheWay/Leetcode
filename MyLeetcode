@@ -31,6 +31,7 @@
 304	Range Sum Query 2D - Immutable	自己的解法是受303启发，每行都是一个一维数组，最后把每行加起来即可。答案的方法更巧妙一点，用sum[i][j]表示从(0,0)到(i,j)的矩形中的元素和。另外多加了一行和一列，用来避免边界判断。可以注意一下	Medium			
 576	Out of Boundary Paths	解法一：自己想的，DFS加缓存，但hashmap最后没通过，所以换成了三维数组，也可以换成二维数组。解法二：动规解法，从起点出发，一层一层递增。比较难想	Hard			
 100	Same Tree	dfs	Easy			
+264	Ugly Number II	很巧妙！ugly[i] = Math.min(Math.min(ugly[num2] * 2, ugly[num3] * 3), ugly[num5] * 5)	Medium			
 
 贪心算法		
 121	Best Time to Buy and Sell Stock 	如果延伸一下，给出的是当前价格和前一天价格的差价：{1, 7, 4, 11}, if he gives {0, 6, -3, 7}。用Kadane's Algorithm来解决	Easy			
