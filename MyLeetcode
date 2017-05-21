@@ -31,7 +31,6 @@
 304	Range Sum Query 2D - Immutable	自己的解法是受303启发，每行都是一个一维数组，最后把每行加起来即可。答案的方法更巧妙一点，用sum[i][j]表示从(0,0)到(i,j)的矩形中的元素和。另外多加了一行和一列，用来避免边界判断。可以注意一下	Medium			
 576	Out of Boundary Paths	解法一：自己想的，DFS加缓存，但hashmap最后没通过，所以换成了三维数组，也可以换成二维数组。解法二：动规解法，从起点出发，一层一层递增。比较难想	Hard			
 100	Same Tree	dfs	Easy			
-264	Ugly Number II	很巧妙！ugly[i] = Math.min(Math.min(ugly[num2] * 2, ugly[num3] * 3), ugly[num5] * 5)	Medium			
 
 贪心算法		
 121	Best Time to Buy and Sell Stock 	如果延伸一下，给出的是当前价格和前一天价格的差价：{1, 7, 4, 11}, if he gives {0, 6, -3, 7}。用Kadane's Algorithm来解决	Easy			
@@ -129,6 +128,8 @@ DFS
 43	Multiply Strings	大整数乘法，很巧妙 `num1[i] * num2[j]` will be placed at indices `[i + j`, `i + j + 1]` 	Medium			
 136	Single Number	Bit Manipulation. 两次^，得到0	Easy			
 262	Ugly Number	positive，看清题目要求	Easy			
+264	Ugly Number II	很巧妙！ugly[i] = Math.min(Math.min(ugly[num2] * 2, ugly[num3] * 3), ugly[num5] * 5)	Medium			
+313	Super Ugly Number	Solution 1: My solution, 仿照264。//Solution 2: 在1的基础上改进，把两个循环合并成一个循环，把每个prime*ugly的value保存下来，避免重复计算，beat 95.27%。//Solution 3: O(n * logk),用priorityqueue，每次取出最小的值  //每个对象保存三个值，对应的素数值，对应的指针位置，对应的value（用来排序）	Medium			
 
 Array						
 88	Merge Sorted Array	双指针问题	Easy			
