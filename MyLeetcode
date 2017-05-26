@@ -98,6 +98,7 @@ DFS
 113	Path Sum II	自己做的。有两处需要remove，不要忘记！记住：回溯问题，有add必有remove，必须对称！	Medium			
 437	Path Sum III	两种解法，其中优化解法复杂度O(n)，想了很久，解释见注释。书上也有这题。记住 ！	Easy(标错了吧)	
 329	Longest Increasing Path in a Matrix	自己做出来的，开心。注意，DFS加缓存的时候，不要只考虑用hashmap。先考虑能否用数组，再考虑用hashmap	Hard			
+417	Pacific Atlantic Water Flow	又是四个方向问题。DFS的根是四个边缘，从边缘开始往中心遍历，遍历出能够到达的所有路径    //pacific和atlantic不要同时进行，一个一个来	Medium			
 
 回溯法						
 401	Binary Watch	第一次回溯法！！做了挺久，记住这题，典型案例；位操作	Easy			
@@ -125,8 +126,7 @@ DFS
 67	Add Binary	用StringBuilder提高效率	Easy			
 541	Reverse String II	//Solution 1: O(n), but we need to copy every element in the string.//Solution 2: O(n), but we only need to swap n/2 elements in the string, while leaving the other elements untouched.	Easy			
 125	Valid Palindrome	Character.isLetterOrDigit()和Character.toLowerCase的用法！	Easy			
-43	Multiply Strings	大整数乘法，很巧妙 `num1[i] * num2[j]` will be placed at indices `[i + j`, `i + j + 1]` 	Medium			
-136	Single Number	Bit Manipulation. 两次^，得到0	Easy			
+43	Multiply Strings	大整数乘法，很巧妙 `num1[i] * num2[j]` will be placed at indices `[i + j`, `i + j + 1]` 	Medium				
 262	Ugly Number	positive，看清题目要求	Easy			
 264	Ugly Number II	很巧妙！ugly[i] = Math.min(Math.min(ugly[num2] * 2, ugly[num3] * 3), ugly[num5] * 5)	Medium			
 313	Super Ugly Number	Solution 1: My solution, 仿照264。//Solution 2: 在1的基础上改进，把两个循环合并成一个循环，把每个prime*ugly的value保存下来，避免重复计算，beat 95.27%。//Solution 3: O(n * logk),用priorityqueue，每次取出最小的值  //每个对象保存三个值，对应的素数值，对应的指针位置，对应的value（用来排序）	Medium			
@@ -150,5 +150,12 @@ Graph
 133	Clone Graph	做了好久。。 DFS自己做出来了，但也经过几个弯路。BFS好难想。。。注意引用地址。详细见注释	Medium			
 207	Course Schedule	寻找图中有没有环。1、BFS解法。拓扑排序，环无法被去掉，所以count会小于结点数。2、DFS解法。对每一个结点依次进行深度搜索，如果回到出发点，则证明有环。改进的DFS解法！效率最高！beat 99.89%：visited不再是简单的true or false，而有0,1,2三个值：0表示未被访问，1表示正在被访问的当前路径上，2表示已经被访问并且被证明不在环上。	Medium	拓扑排序：http://blog.csdn.net/changyuanchn/article/details/17067349	ArrayList[] paths = new ArrayList[numCourses];  //error: cannot create array with '<>'，这里不能加<>。遍历的时候，(int)paths[root].get(i)强制类型转换！或者：ArrayList<Integer>[] paths = new ArrayList[numCourses]，不需要强制类型转换	
 210	Course Schedule II	仿照207，改进的DFS解法效率最高。但要注意：207中paths[pre[0]].add(pre[1])和paths[pre[1]].add(pre[0])都对，但本题只能是paths[pre[0]].add(pre[1])。因为本题要求的路径其实就是拓扑排序的定义，要把优先级最高的结点放在前面，所以从后置课向前置课进行遍历，遍历到尽头（或尽头的结点都已经被加入路径）时，即是当前优先级最高的前置课	Medium								
+
+Bit Manipulation						
+136	Single Number	Bit Manipulation. 两次^，得到0	Easy			
+137	Single Number II		Medium			
+191	Number of 1 Bits	不是>>，应该是无符号移位	Easy			
+371	Sum of Two Integers		Easy	位操作套路总结：https://leetcode.com/problems/sum-of-two-integers/#/solutions		
+	
 
 				
