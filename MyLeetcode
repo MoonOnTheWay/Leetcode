@@ -63,6 +63,7 @@ Binary Tree
 572	Subtree of Another Tree	虽然是简单题，但我的DFS解法犯了一个很典型的错误！改正方法是加一个flag记录当前小树节点是否是根。另一种解法是：第一个函数用来遍历大树的每一个节点作为根，然后输入到第二个函数：第二个函数用来检测以当前大树节点为根的子树是否与小树完全一样	Easy			
 100	Same Tree	dfs	Easy			
 315	Count of Smaller Numbers After Self	//思路很巧妙。从右到左建立Binary Search Tree    //每个结点除了value外，还要记录sum和dup值：sum表示比该结点小的结点个数，dup表示当前结点重复结点的个数	Hard			
+116	Populating Next Right Pointers in Each Node	设两个指针，一个表示每层的最左结点，一个表示每层的遍历结点	Medium			
 												
 排序						
 349	Intersection of Two Arrays	HashSet的用法。遍历用for循环,复杂度为O(n)。还可以用sort、二分查找，复杂度为O(nlogn)	Easy			
