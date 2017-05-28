@@ -64,7 +64,8 @@ Binary Tree
 100	Same Tree	dfs	Easy			
 315	Count of Smaller Numbers After Self	//思路很巧妙。从右到左建立Binary Search Tree    //每个结点除了value外，还要记录sum和dup值：sum表示比该结点小的结点个数，dup表示当前结点重复结点的个数	Hard			
 116	Populating Next Right Pointers in Each Node	设两个指针，一个表示每层的最左结点，一个表示每层的遍历结点	Medium			
-												
+117	Populating Next Right Pointers in Each Node II	很巧妙，新建一个虚拟头结点，它的next是每层最左结点	Medium			
+											
 排序						
 349	Intersection of Two Arrays	HashSet的用法。遍历用for循环,复杂度为O(n)。还可以用sort、二分查找，复杂度为O(nlogn)	Easy			
 350	Intersection of Two Arrays II	自己想出来的，跟答案思路一样。关键在于，map.get(x) + 1和- 1的操作。另外用ArrayList存储result，再输出到数组中	Easy	Solution to 3rd follow-up question		
