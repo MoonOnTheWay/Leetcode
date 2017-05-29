@@ -104,6 +104,7 @@ DFS
 417	Pacific Atlantic Water Flow	又是四个方向问题。DFS的根是四个边缘，从边缘开始往中心遍历，遍历出能够到达的所有路径    //pacific和atlantic不要同时进行，一个一个来，   //BFS则是从四个边缘同时开始往中心遍历，一层层进行	Medium			
 529	Minesweeper	自己做的DFS	Medium			
 514	Freedom Trail	每步最优，最终解并不一定是最优！// Solution 1: DFS+cache // Solution2：动规：dp[i][j]表示从ring的第j个位置开始，拼出key的第i个位置以后的所有字母，我们最终要求的是dp[0][0],递推关系是：                   dp[i][j] = Min{dp[i + 1][k] + |j - k|}	Hard			
+129	Sum Root to Leaf Numbers	自己做的太麻烦了，先转成arraylist再转成int，很复杂.答案思路，DFS过程中，每往下一层，sum乘10再加上当前val	Medium			
 
 回溯法						
 401	Binary Watch	第一次回溯法！！做了挺久，记住这题，典型案例；位操作	Easy			
