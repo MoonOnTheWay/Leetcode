@@ -145,6 +145,7 @@ Array
 80	Remove Duplicates from Sorted Array II	和26一个套路。if(nums[i] != nums[count - 2])  nums[count++] = nums[i];   //注意: 不是和nums[i - 2]，而是和nums[count - 2]相比。因为count是待填入的位置，所以应该和这个位置前面的两个数不同   	Medium			
 57	Insert Interval	分成三段：与newInterval完全不重叠的左边区间，与newInterval重叠的中间区间，与newInterval完全不重叠的右边区间	Hard			
 581	Shortest Unsorted Continuous Subarray	不太easy。。自己做出了一种解法，然后答案有两种解法。其中一种解法O(n)很巧妙！双指针。min表示从左到右的最大值，max表示从右往左的最小值。	Easy			
+169	Majority Element	Since the majority element appears more than n/2 times, if we remove two different elements from the array, the majority element will still appears more than n/2 times	Easy			
 		
 链表Linked List						
 234	Palindrome Linked List	//Solution 1: 先通过fast和slow遍历一遍数组，再把右半部分反转   //Solution 2: beat 94.52%。reverse左半边，这样一次遍历就可以同时完成slow,fast的定位和左半边反转	Easy	链表反转，避免空指针操作！		
