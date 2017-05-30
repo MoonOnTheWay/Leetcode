@@ -167,6 +167,7 @@ Bit Manipulation
 371	Sum of Two Integers		Easy	位操作套路总结：https://leetcode.com/problems/sum-of-two-integers/#/solutions		
 342	Power of Four	 //4^k = 2^(2k)   //只有一个1位，且1在偶数位置上    //num & (num - 1)用来remove the last 1 bit	Easy			
 231	Power of Two	只有一个1位	Easy			
+268	Missing Number	a^b^b =a. 异或操作的特点：对相同的数异或两次，变回原来	Easy			
 
 Design						
 155	Min Stack	自己做的，只用一个stack的解法，beat 87.87%	Easy			
