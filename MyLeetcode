@@ -147,6 +147,7 @@ Array
 57	Insert Interval	分成三段：与newInterval完全不重叠的左边区间，与newInterval重叠的中间区间，与newInterval完全不重叠的右边区间	Hard			
 581	Shortest Unsorted Continuous Subarray	不太easy。。自己做出了一种解法，然后答案有两种解法。其中一种解法O(n)很巧妙！双指针。min表示从左到右的最大值，max表示从右往左的最小值。	Easy			
 169	Majority Element	Since the majority element appears more than n/2 times, if we remove two different elements from the array, the majority element will still appears more than n/2 times	Easy			
+229	Majority Element II	"如果是> 1/k，那么最多只有k - 1个答案，那就设置k - 1个majority。    //最后一定要再遍历一遍统计每个majority真实出现的次数，验证"	Medium			
 		
 链表Linked List						
 234	Palindrome Linked List	//Solution 1: 先通过fast和slow遍历一遍数组，再把右半部分反转   //Solution 2: beat 94.52%。reverse左半边，这样一次遍历就可以同时完成slow,fast的定位和左半边反转	Easy	链表反转，避免空指针操作！		
