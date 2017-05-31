@@ -157,6 +157,7 @@ Array
 21	Merge Two Sorted Lists	递归解法	Easy			
 206	Reverse Linked List	自己写出来iterative解法，递归解法就是对iterative稍作改动	Easy			
 92	Reverse Linked List II	两种解法，重点在于virtual head，比较巧妙。我的解法是基于206，答案解法比较新	Medium			
+148	Sort List	Solution 1: MergeSort：比较好想，虚拟头结点的使用。Solution 2: QuickSort：答案的quicksort，交换的是节点的值，不是节点本身，不同于一般QuickSort从两边往中间，这种解法都是从左到右交换的	Medium			
 
 Graph						
 332	Reconstruct Itinerary	hierholzers算法，欧拉路径：a trail which visits every edge exactly once	Medium	http://www.geeksforgeeks.org/hierholzers-algorithm-directed-graph/	1.ArrayList是实现了基于动态数组的数据结构，LinkedList基于链表的数据结构。  2.对于随机访问get和set，ArrayList觉得优于LinkedList，因为LinkedList要移动指针。 3.对于新增和删除操作add和remove，LinedList比较占优势，因为ArrayList要移动数据。	
