@@ -66,6 +66,7 @@ Binary Tree
 116	Populating Next Right Pointers in Each Node	设两个指针，一个表示每层的最左结点，一个表示每层的遍历结点	Medium			
 117	Populating Next Right Pointers in Each Node II	很巧妙，新建一个虚拟头结点，它的next是每层最左结点	Medium			
 331	Verify Preorder Serialization of a Binary Tree	用入度，出度来解决，对一个合法的二叉树，总的indegree+outdegree一定等于0	Medium			
+449	Serialize and Deserialize BST	自己做的，做了挺久。。我是用BFS，按层从上到下依次来	Medium			
 											
 排序						
 349	Intersection of Two Arrays	HashSet的用法。遍历用for循环,复杂度为O(n)。还可以用sort、二分查找，复杂度为O(nlogn)	Easy			
