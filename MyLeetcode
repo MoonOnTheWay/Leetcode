@@ -179,6 +179,7 @@ Bit Manipulation
 231	Power of Two	只有一个1位	Easy			
 268	Missing Number	a^b^b =a. 异或操作的特点：对相同的数异或两次，变回原来	Easy			
 190	Reverse Bits	Solution 1: 设一个mask = 1<<31，每次mask和n同时右移一位，这样mask可以使对称位置变成1	Easy			
+201	Bitwise AND of Numbers Range	1<<count表示从右往左count个位之后，m和n完全相同，即count左边的所有位都相同。然后乘m把count左边的位拼接上去 	Medium			
 
 Design						
 155	Min Stack	自己做的，只用一个stack的解法，beat 87.87%	Easy			
