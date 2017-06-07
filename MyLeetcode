@@ -120,6 +120,7 @@ DFS
 47	Permutations II	增加一个isUsed数组，判断结点是否被用过。//对于和前一个结点一样的结点，判断前一个结点是否被used：如果是，说明当前结点和前一个结点在同一个树枝上；否则，说明它们是同一个根的两个分叉，需要剪去当前枝。if(i > 0 && nums[i] == nums[i - 1] && !isUsed[i - 1]) continue;  	Medium			
 39	Combination Sum	要记录start的位置，每次从start开始，避免重复	Medium			
 40	Combination Sum II	和Subsets II类似	Medium			
+216	Combination Sum III	一样的套路	Medium			
 89	Gray Code	位操作。^ | >> <<	Medium			
 79	Word Search	DFS,BFS。做了好久！isVisited = true的位置，以及要恢复为false	Medium	http://mp.weixin.qq.com/s/c53OEvJjHDh4gEr6IYOFGA    	http://www.java2blog.com/2015/12/depth-first-search-in-java.html	
 343	Integer Break	多种方法，值得研究。自顶向下和自底向上，数学解法	Medium	http://mp.weixin.qq.com/s?__biz=MzAwMDk1MTUyNw==&mid=2247483903&idx=1&sn=7547ab490ba22d4a119eeb30e767b65f&chksm=9ae05477ad97dd6130b3d4b3f543545b4d2d7d5336e738fd6556c5fa3342fd5fc1e2ceea5772&scene=21#wechat_redirect		
