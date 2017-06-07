@@ -9,6 +9,7 @@
 35	Search Insert Position	二分查找的套路1	Easy			
 410	Split Array Largest Sum	    //这题非常巧妙，运用二分查找    //答案一定在[max, sum]中取得，所以检验mid是否符合要求：    //从左往右累加nums，如果和大于mid，则“切断”，从当前开始从零累加。这样每个切下的断的和都是小于mid的最大值。    //若count比m大，说明mid选小了，因为已经尽可能大地去切断，却仍然多出了，所以left = mid + 1    //若count比m小，说明mid选大了，不够切m段，所以right = mid - 1;   //若count等于m，说明mid可能选大了，因为我们要求最小的mid，所以right = mid - 1    //最终答案是left	Hard			
 29	Divide Two Integers	    //  二分法思想    //  Find the largest multiple so that (divisor * multiple <= dividend),  //  whereas we are moving with stride 1, 2, 4, 8, 16...2^n for performance reason. //  Think this as a binary search.	Medium			
+33	Search in Rotated Sorted Array	"Solution 1: 先按照153的方法找到最小值的index，然后在index左边或右边再进行二分查找  //Solution 2: 只用一个binary search.依据：when rotating the array, there must be one half of the array that is still in sorted order.    public int search(int[] nums, int target) "	Medium			
 
 动态规划						
 174	Dungeon Game	动态规划。从右下角到左上角	Hard	http://mp.weixin.qq.com/s/Zkir5lVALEaINd8YKBKqpw		
