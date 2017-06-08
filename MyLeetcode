@@ -11,6 +11,7 @@
 29	Divide Two Integers	    //  二分法思想    //  Find the largest multiple so that (divisor * multiple <= dividend),  //  whereas we are moving with stride 1, 2, 4, 8, 16...2^n for performance reason. //  Think this as a binary search.	Medium			
 33	Search in Rotated Sorted Array	"Solution 1: 先按照153的方法找到最小值的index，然后在index左边或右边再进行二分查找  //Solution 2: 只用一个binary search.依据：when rotating the array, there must be one half of the array that is still in sorted order.    public int search(int[] nums, int target) "	Medium			
 34	Search for a Range	设置一个函数用来找到target的左边界，然后再在左边界右边找到target + 1的左边界，也即找到了target的右边界。注意要检查边界的正确性	Medium	二分法套路一和套路二的区别：如果while循环内对mid进行return操作，那么用套路一，否则用套路二		
+50	Pow(x, n)	对指数n进行二分，分为奇数和偶数两种情况。注意n = MIN_VALUE时的各种临界情况	Medium			
 
 动态规划						
 174	Dungeon Game	动态规划。从右下角到左上角	Hard	http://mp.weixin.qq.com/s/Zkir5lVALEaINd8YKBKqpw		
