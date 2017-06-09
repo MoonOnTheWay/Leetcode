@@ -15,6 +15,7 @@
 287	Find the Duplicate Number	O(n).思路和142. Linked List Cycle II 一样，但这里的一步，两步不再只是简单的右移，而是根据index进行移动	Medium			
 167	Two Sum II - Input array is sorted	双指针	Easy			
 275	H-Index II	//最终求的是最大的次数，使得对应的引用数 >= 次数。思路很简单，但一些边界条件，包括=时的处理，容易出错。有三种处理方法。	Medium			
+162	Find Peak Element	画出曲线图，上坡时，left右移，下坡时，right左移	Medium			
 
 动态规划						
 174	Dungeon Game	动态规划。从右下角到左上角	Hard	http://mp.weixin.qq.com/s/Zkir5lVALEaINd8YKBKqpw		
