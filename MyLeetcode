@@ -13,6 +13,7 @@
 34	Search for a Range	设置一个函数用来找到target的左边界，然后再在左边界右边找到target + 1的左边界，也即找到了target的右边界。注意要检查边界的正确性	Medium	二分法套路一和套路二的区别：如果while循环内对mid进行return操作，那么用套路一，否则用套路二		
 50	Pow(x, n)	对指数n进行二分，分为奇数和偶数两种情况。注意n = MIN_VALUE时的各种临界情况	Medium			
 287	Find the Duplicate Number	O(n).思路和142. Linked List Cycle II 一样，但这里的一步，两步不再只是简单的右移，而是根据index进行移动	Medium			
+167	Two Sum II - Input array is sorted	双指针	Easy			
 
 动态规划						
 174	Dungeon Game	动态规划。从右下角到左上角	Hard	http://mp.weixin.qq.com/s/Zkir5lVALEaINd8YKBKqpw		
