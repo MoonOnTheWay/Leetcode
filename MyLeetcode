@@ -10,6 +10,7 @@
 410	Split Array Largest Sum	    //这题非常巧妙，运用二分查找    //答案一定在[max, sum]中取得，所以检验mid是否符合要求：    //从左往右累加nums，如果和大于mid，则“切断”，从当前开始从零累加。这样每个切下的断的和都是小于mid的最大值。    //若count比m大，说明mid选小了，因为已经尽可能大地去切断，却仍然多出了，所以left = mid + 1    //若count比m小，说明mid选大了，不够切m段，所以right = mid - 1;   //若count等于m，说明mid可能选大了，因为我们要求最小的mid，所以right = mid - 1    //最终答案是left	Hard			
 29	Divide Two Integers	    //  二分法思想    //  Find the largest multiple so that (divisor * multiple <= dividend),  //  whereas we are moving with stride 1, 2, 4, 8, 16...2^n for performance reason. //  Think this as a binary search.	Medium			
 33	Search in Rotated Sorted Array	"Solution 1: 先按照153的方法找到最小值的index，然后在index左边或右边再进行二分查找  //Solution 2: 只用一个binary search.依据：when rotating the array, there must be one half of the array that is still in sorted order.    public int search(int[] nums, int target) "	Medium			
+81	Search in Rotated Sorted Array II	分为三种情况：1、左边是排序的或右边是未排序的；2、右边是排序的或左边是未排序的；3、left=right=mid，说明有重复元素，右边界左移，跳过重复元素	Medium			
 34	Search for a Range	设置一个函数用来找到target的左边界，然后再在左边界右边找到target + 1的左边界，也即找到了target的右边界。注意要检查边界的正确性	Medium	二分法套路一和套路二的区别：如果while循环内对mid进行return操作，那么用套路一，否则用套路二		
 50	Pow(x, n)	对指数n进行二分，分为奇数和偶数两种情况。注意n = MIN_VALUE时的各种临界情况	Medium			
 287	Find the Duplicate Number	O(n).思路和142. Linked List Cycle II 一样，但这里的一步，两步不再只是简单的右移，而是根据index进行移动	Medium			
