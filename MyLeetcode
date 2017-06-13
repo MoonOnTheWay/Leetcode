@@ -21,6 +21,7 @@
 222	Count Complete Tree Nodes	二分法的思路：每次砍掉一般的树枝，直到最后只剩一个叶子。Solution 1: 二分法的递归解法，每次需要重复计算root的高度和root.right的height; Solution 2: 二分法的循环解法，效率更高，只需要计算一次总高度h. Time: O((log n)^2).Solution 3: 二叉树的一般解法格式	Medium			
 209	Minimum Size Subarray Sum	Solution 1: binary search, Time: O(n * log n)，转化成从不同起始点开始，在递增序列中找到target；Solution 2: Two pointers, Time: O(n)	Medium			
 378	Kth Smallest Element in a Sorted Matrix	Solution 1: Binary Search。效率更高，非常巧妙：转化为找<= target的count数。Solution 2: PriorityQueue, 和 373. Find K Pairs with Smallest Sums一样：pq每次弹出一个值，把该值所在列的下一行的值加入pq中	Medium			
+441	Arranging Coins	注意long型,double型的数值最大值，防止越界	Easy			
 
 动态规划						
 174	Dungeon Game	动态规划。从右下角到左上角	Hard	http://mp.weixin.qq.com/s/Zkir5lVALEaINd8YKBKqpw		
