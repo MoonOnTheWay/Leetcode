@@ -23,6 +23,7 @@
 378	Kth Smallest Element in a Sorted Matrix	Solution 1: Binary Search。效率更高，非常巧妙：转化为找<= target的count数。Solution 2: PriorityQueue, 和 373. Find K Pairs with Smallest Sums一样：pq每次弹出一个值，把该值所在列的下一行的值加入pq中	Medium			
 441	Arranging Coins	注意long型,double型的数值最大值，防止越界	Easy			
 475	Heaters	Solution 1: for each house, we find the nearest heater by binary search in heaters;//the result is the maximum of all the nearest distances 。Solution 2: 把二分法替换为：直接先把houses排序，这样直接从左到右遍历，不需要进行查找。效率更高，双指针	Easy（应该是Medium）			
+454	4Sum II	两个Hashmap,O(n ^ 2)	Medium			
 
 动态规划						
 174	Dungeon Game	动态规划。从右下角到左上角	Hard	http://mp.weixin.qq.com/s/Zkir5lVALEaINd8YKBKqpw		
