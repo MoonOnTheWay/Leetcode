@@ -24,6 +24,8 @@
 441	Arranging Coins	注意long型,double型的数值最大值，防止越界	Easy			
 475	Heaters	Solution 1: for each house, we find the nearest heater by binary search in heaters;//the result is the maximum of all the nearest distances 。Solution 2: 把二分法替换为：直接先把houses排序，这样直接从左到右遍历，不需要进行查找。效率更高，双指针	Easy（应该是Medium）			
 454	4Sum II	两个Hashmap,O(n ^ 2)	Medium			
+436	Find Right Interval	对每个end，找到大于等于它的最小start对应的index。Solution 1: 首次使用TreeMap，红黑树，对map中的key进行排序. Solution 2: binary search，不使用TreeMap数据结构	Medium	首次使用TreeMap。HashMap:底层是哈希表数据结构。线程不同步。TreeMap:底层是二叉树数据结构，线程不同步，可用于给Map集合中的键进行排序。	http://docs.oracle.com/javase/7/docs/api/java/util/NavigableMap.html	
+367	Valid Perfect Square	和67两个套路一样。注意乘法操作时用long型防止越界	Easy			
 
 动态规划						
 174	Dungeon Game	动态规划。从右下角到左上角	Hard	http://mp.weixin.qq.com/s/Zkir5lVALEaINd8YKBKqpw		
