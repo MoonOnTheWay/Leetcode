@@ -180,6 +180,7 @@ Array
 334	Increasing Triplet Subsequence	设一个min和一个max，当当前数大于max时，说明已经有三个数是增长趋势，return true	Medium			
 15	3Sum Closest	跳过相同的left, mid, right	Medium			
 16	3Sum Closest	三个指针	Medium			
+18	4Sum	在3Sum的基础上改进：先固定first，再固定second，然后就转化成3Sum，寻找可能的third和fourth。提高效率：对于first和second过小或者过大的情况，直接跳过	Medium			
 		
 链表Linked List						
 234	Palindrome Linked List	//Solution 1: 先通过fast和slow遍历一遍数组，再把右半部分反转   //Solution 2: beat 94.52%。reverse左半边，这样一次遍历就可以同时完成slow,fast的定位和左半边反转	Easy	链表反转，避免空指针操作！		
