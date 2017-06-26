@@ -168,6 +168,7 @@ DFS
 373	Find K Pairs with Smallest Sums	Time: O(k * logk) 只需要进行k次循环 //规律是：pq中只需维持nums2.length的大小，每次弹出一个pair时，新加入一个newpair，这个newpair的终点和pair相同，起点为pair的起点+1	Medium	PriorityQueue		
 326	Power of Three	非递归或循环的解法：int能保存的最大power of 3是3^19,看3^19能不能被n整除	Easy			
 20	Valid Parentheses	看答案的，没想到用stack	Easy			
+28	Implement strStr()	双指针	Easy			
 
 Array						
 88	Merge Sorted Array	双指针问题	Easy			
