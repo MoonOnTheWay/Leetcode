@@ -167,6 +167,7 @@ DFS
 313	Super Ugly Number	Solution 1: My solution, 仿照264。//Solution 2: 在1的基础上改进，把两个循环合并成一个循环，把每个prime*ugly的value保存下来，避免重复计算，beat 95.27%。//Solution 3: O(n * logk),用priorityqueue，每次取出最小的值  //每个对象保存三个值，对应的素数值，对应的指针位置，对应的value（用来排序）	Medium			
 373	Find K Pairs with Smallest Sums	Time: O(k * logk) 只需要进行k次循环 //规律是：pq中只需维持nums2.length的大小，每次弹出一个pair时，新加入一个newpair，这个newpair的终点和pair相同，起点为pair的起点+1	Medium	PriorityQueue		
 326	Power of Three	非递归或循环的解法：int能保存的最大power of 3是3^19,看3^19能不能被n整除	Easy			
+20	Valid Parentheses	看答案的，没想到用stack	Easy			
 
 Array						
 88	Merge Sorted Array	双指针问题	Easy			
