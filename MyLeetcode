@@ -185,7 +185,8 @@ Array
 16	3Sum Closest	三个指针	Medium			
 18	4Sum	在3Sum的基础上改进：先固定first，再固定second，然后就转化成3Sum，寻找可能的third和fourth。提高效率：对于first和second过小或者过大的情况，直接跳过	Medium			
 42	Trapping Rain Water	Solution 1: Fix the higher one and flow water from the lower part. Solution 2: 先从左到右一个pass确定每个位置的左边界，然后再从右往左一个pass确定每个位置的右边界，然后用较小的边界-height	Hard			
-		
+532	K-diff Pairs in an Array	之所以用hashmap而不能用hashset，就是因为k = 0的情况，需要知道有多少个重复数字	Easy			
+	
 链表Linked List						
 234	Palindrome Linked List	//Solution 1: 先通过fast和slow遍历一遍数组，再把右半部分反转   //Solution 2: beat 94.52%。reverse左半边，这样一次遍历就可以同时完成slow,fast的定位和左半边反转	Easy	链表反转，避免空指针操作！		
 61	Rotate List	Solution 1: My solution, 仿照189。Start from one element and keep rotating until we have rotated n different elements. Solution 2: 把链表首尾串联	Medium			
