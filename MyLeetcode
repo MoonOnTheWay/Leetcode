@@ -175,6 +175,7 @@ DFS
 3	Longest Substring Without Repeating Characters	依然按照76的模板。是对于invalid的情况，make it valid	Medium			
 71	Simplify Path	自己的解法，比较难，没有用自带的函数；答案的解法利用split()函数简化操作	Medium			
 30	Substring with Concatenation of All Words	不太难，和答案的思路一样，在字符串中查找多个子字符串，一般可以用hashmap存储子字符串	Hard			
+150	Evaluate Reverse Polish Notation	stack,简单。String型数字转成Int型用Integer.parseInt()	Medium			
 
 Array						
 88	Merge Sorted Array	双指针问题	Easy			
