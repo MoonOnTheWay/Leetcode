@@ -157,7 +157,7 @@ DFS
 4	Median of Two Sorted Arrays	经典难题，Algorithms上面也有。二分法，也是分治法思想。Time: O(log(min(m, n)))	Hard	http://mp.weixin.qq.com/s?__biz=MzAwMDk1MTUyNw==&mid=2247484853&idx=1&sn=20c8931836c07bdbdb6556aecbbd0cdf&chksm=9ae0503dad97d92b1062193a0057ca0ba64d4709ffe43791d6e1bfbe8986fd4a60cdb1ed7040&mpshare=1&scene=23&srcid=05069Iquuw2CJ7IMguOJ3gsQ#rd		
 312	Burst Balloons	分治法的反向思维！见注释。可以有两种实现方法：自顶向下递归加缓存，和自底向上循环。很经典！其中，cache[left][right]和dp[left][right]都表示以left和right为边界的区间内最大的得分	Hard			
 
-数学						
+数学/String						
 67	Add Binary	用StringBuilder提高效率	Easy			
 541	Reverse String II	//Solution 1: O(n), but we need to copy every element in the string.//Solution 2: O(n), but we only need to swap n/2 elements in the string, while leaving the other elements untouched.	Easy			
 125	Valid Palindrome	Character.isLetterOrDigit()和Character.toLowerCase的用法！	Easy			
@@ -173,6 +173,7 @@ DFS
 76	Minimum Window Substring	解决substring问题的模板	Hard			
 159	Longest Substring with At Most Two Distinct Characters	按照上题的模板。76是对于valid的情况，make it invalid; 159是对于invalid的情况，make it valid	Hard			
 3	Longest Substring Without Repeating Characters	依然按照76的模板。是对于invalid的情况，make it valid	Medium			
+71	Simplify Path	自己的解法，比较难，没有用自带的函数；答案的解法利用split()函数简化操作	Medium			
 
 Array						
 88	Merge Sorted Array	双指针问题	Easy			
