@@ -170,6 +170,7 @@ DFS
 20	Valid Parentheses	看答案的，没想到用stack	Easy			
 28	Implement strStr()	双指针	Easy			
 345	Reverse Vowels of a String	用HashMap查找	Easy			
+76	Minimum Window Substring	解决substring问题的模板	Hard			
 
 Array						
 88	Merge Sorted Array	双指针问题	Easy			
