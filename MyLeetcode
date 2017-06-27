@@ -194,6 +194,7 @@ Array
 206	Reverse Linked List	自己写出来iterative解法，递归解法就是对iterative稍作改动	Easy			
 92	Reverse Linked List II	两种解法，重点在于virtual head，比较巧妙。我的解法是基于206，答案解法比较新	Medium			
 148	Sort List	Solution 1: MergeSort：比较好想，虚拟头结点的使用。Solution 2: QuickSort：答案的quicksort，交换的是节点的值，不是节点本身，不同于一般QuickSort从两边往中间，这种解法都是从左到右交换的	Medium			
+141	Linked List Cycle	fast和slow若相遇，则说明有cycle	Easy			
 142	Linked List Cycle II	双指针，经典题	Medium			
 86	Partition List	两种方法：1、建立两个list,一个存放<x的，一个存放>x的，最后合并两个list；2、和我的思路一致，遇到大的跳过，遇到小的插入到前面，cur保存当前>=x的序列的尾结点，pre保存前面<x的序列的尾结点	Medium			
 
