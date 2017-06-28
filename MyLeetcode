@@ -62,7 +62,6 @@
 406	Queue Reconstruction by Height	按身高从大到小排列，若身高一样，按人数从小到大排列。先放大的再放小的，可以确保人数就是应该插入的位置，因为每次插入的都是剩下的身高最高的，后面不会有人要插在它前面	Medium			
 134	Gas Station	想了好久。。。如何一遍遍历就找出start的位置。设置need参数表示到start之前所需要的gas，left表示从start走到某一站所剩余的gas	Medium
 435	Non-overlapping Intervals	和452类似。对end进行排序	Medium			
-503	Next Greater Element II	方法一：暴力；方法二：Stack。很巧妙！	Medium	http://mp.weixin.qq.com/s?__biz=MzAwMDk1MTUyNw==&mid=2247484355&idx=1&sn=863e6f2ebafef26a89cd0d3e89b453dd&chksm=9ae0564bad97df5dba9ebbae7b018df81873b0ae83d8b30b7206002c081ef8f9c91824aadb1d&scene=21#wechat_redirect		
 451	Sort Characters By Frequency	多种解法，不同数据结构的运用：1.HashMap(map.keySet()用来遍历哈希表) 2.ArrayList对象的数组 3.StringBuilder(sb.append(), sb.toString()) 4.PriorityQueue(pq.offer(), pq.poll()) 5.字符串转成字符数组：str.toCharArray()，反之String.valueOf(char_array)，或者String str = new(chararray);	Medium	http://mp.weixin.qq.com/s?__biz=MzAwMDk1MTUyNw==&mid=2247484373&idx=1&sn=c298e0c02fca13016188212b71efde79&chksm=9ae0565dad97df4ba4daffaa438e8ee2939aac8515f6516548dd19ee65e0f80b0ffc26aadf7b&scene=21#wechat_redirect	https://docs.oracle.com/javase/7/docs/api/java/util/PriorityQueue.html	
 
 Binary Tree						
@@ -226,6 +225,10 @@ Bit Manipulation
 
 Design						
 155	Min Stack	自己做的，只用一个stack的解法，beat 87.87%	Easy			
+
+Stack						
+503	Next Greater Element II	方法一：暴力；方法二：Stack。很巧妙！	Medium	http://mp.weixin.qq.com/s?__biz=MzAwMDk1MTUyNw==&mid=2247484355&idx=1&sn=863e6f2ebafef26a89cd0d3e89b453dd&chksm=9ae0564bad97df5dba9ebbae7b018df81873b0ae83d8b30b7206002c081ef8f9c91824aadb1d&scene=21#wechat_redirect		
+496	Next Greater Element I	自己想到的，模仿503，但不存放在数组中，而是存放在hashmap中	Easy			
 
 
 				
