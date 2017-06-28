@@ -229,6 +229,7 @@ Design
 Stack						
 503	Next Greater Element II	方法一：暴力；方法二：Stack。很巧妙！	Medium	http://mp.weixin.qq.com/s?__biz=MzAwMDk1MTUyNw==&mid=2247484355&idx=1&sn=863e6f2ebafef26a89cd0d3e89b453dd&chksm=9ae0564bad97df5dba9ebbae7b018df81873b0ae83d8b30b7206002c081ef8f9c91824aadb1d&scene=21#wechat_redirect		
 496	Next Greater Element I	自己想到的，模仿503，但不存放在数组中，而是存放在hashmap中	Easy			
+456	132 Pattern	//烧脑。。    //从右往左，找到存在右边的数比它小的数，作为3，然后把它的右边比它小的最大数作为2，继续往左，当发现一个数比2小，则为1，即最小的数    //对于132，最小的数在最左边，所以应该从右往左，先确定3，再确定2，最后确定1    //如果是213，则为从左往右，因为3在最右边，所以需要先确定1，再确定2，最后确定3	Medium			
 
 
 				
