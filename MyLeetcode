@@ -233,6 +233,7 @@ Stack
 456	132 Pattern	//烧脑。。    //从右往左，找到存在右边的数比它小的数，作为3，然后把它的右边比它小的最大数作为2，继续往左，当发现一个数比2小，则为1，即最小的数    //对于132，最小的数在最左边，所以应该从右往左，先确定3，再确定2，最后确定1    //如果是213，则为从左往右，因为3在最右边，所以需要先确定1，再确定2，最后确定3	Medium			
 385	Mini Parser	//思路我都想到了，但把所有情况考虑到真是不容易，尤其对于：什么时候加到stack里    //可能不止一个数字，不止一个list	Medium			
 173	Binary Search Tree Iterator	自己做的，In-Order的stack实现方法	Medium			
+341	Flatten Nested List Iterator	自己想出来了，包括逆序添加到stack中    //但我的解法把next()和hasNext()函数体颠倒了顺序，这导致[[]]通不过，因为[]会被加到stack中，但此时stack中其实并不包含任何Integer    //所以可以在我的解法基础上，在hasNext()中对[[]]单独处理    //或者像答案一样，把主函数体放在hasNext()中	Medium			
 
 
 				
