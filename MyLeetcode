@@ -237,6 +237,7 @@ Stack
 394	Decode String	自己做出来的。和385有点像，需要考虑各种边界情况，复杂	Medium			
 402	Remove K Digits	自己做出来的。和556很像。从左到右把递增的数加入stack中，当发现一个数比它左边的数小，进行pop()操作，同时k--。遍历完后，如果k还>0，那么对stack中剩余的递增序列进行k次pop()。	Medium			
 591	Tag Validator	直接看答案的。很繁琐，但不难//string.startsWith(),和indexOf()的应用    //Character.isUpperCase()	Hard			
+255	Verify Preorder Sequence in Binary Search Tree	看答案的。把递减序列加入stack中，这表示当前序列在左分支上。当遍历到右分支，pop所有比当前数小的数，并且保留其中最大的为min，作为接下来序列的下边界，若下一个数小于min，则返回false。Solution 1: Space: O(n), using stack。Solution 2: Space: O(1), using preorder[]	Medium			
 
 
 				
