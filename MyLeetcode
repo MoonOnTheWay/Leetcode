@@ -222,6 +222,7 @@ Bit Manipulation
 190	Reverse Bits	Solution 1: 设一个mask = 1<<31，每次mask和n同时右移一位，这样mask可以使对称位置变成1	Easy			
 201	Bitwise AND of Numbers Range	1<<count表示从右往左count个位之后，m和n完全相同，即count左边的所有位都相同。然后乘m把count左边的位拼接上去 	Medium			
 187	Repeated DNA Sequences	Solution 1: 把字符串存到hashset中。Solution 2: 用int型变量代替字符串，用bit manipulation	Medium			
+389	Find the Difference	Solution2: Bit Manipulation,利用异或的性质	Easy			
 
 Design						
 155	Min Stack	自己做的，只用一个stack的解法，beat 87.87%	Easy			
