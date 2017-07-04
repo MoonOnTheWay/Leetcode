@@ -194,6 +194,7 @@ Array
 532	K-diff Pairs in an Array	之所以用hashmap而不能用hashset，就是因为k = 0的情况，需要知道有多少个重复数字	Easy			
 289	Game of Life	自己做出来的	Medium			
 391	Perfect Rectangle	自己想不到，看答案的。//The right answer must satisfy two conditions: //1. the large rectangle area should be equal to the sum of small rectangles //2. count of all the points should be even, and that of all the four corner points should be one	Hard			
+463	Island Perimeter	自己的解法；答案的解法比较巧妙：islands * 4 - neighbours * 2	Easy			
 	
 链表Linked List						
 234	Palindrome Linked List	//Solution 1: 先通过fast和slow遍历一遍数组，再把右半部分反转   //Solution 2: beat 94.52%。reverse左半边，这样一次遍历就可以同时完成slow,fast的定位和左半边反转	Easy	链表反转，避免空指针操作！		
