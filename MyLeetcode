@@ -177,6 +177,7 @@ DFS
 150	Evaluate Reverse Polish Notation	stack,简单。String型数字转成Int型用Integer.parseInt()	Medium			
 400	Nth Digit	First find the length of the target number; Second find the target number; Last find the target digit of the target number	Easy			
 415	Add Strings	做过很多次，简洁写法	Easy			
+166	Fraction to Recurring Decimal	对于小数位，when there are two same remainders, we know the fractional part is repeating。用hashmap存储每个余数，需要用hashmap而不是hashset，保存每个数字的位置	Medium			
 
 Array						
 88	Merge Sorted Array	双指针问题	Easy			
