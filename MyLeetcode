@@ -200,6 +200,7 @@ Array
 463	Island Perimeter	自己的解法；答案的解法比较巧妙：islands * 4 - neighbours * 2	Easy			
 409	Longest Palindrome	可以用hashmap, hashset, array	Easy			
 54	Spiral Matrix	答案很巧妙。对left和up两种情况，要先进行判断，防止重复	Medium			
+283	Move Zeroes	自己做的，简单	Easy			
 	
 链表Linked List						
 234	Palindrome Linked List	//Solution 1: 先通过fast和slow遍历一遍数组，再把右半部分反转   //Solution 2: beat 94.52%。reverse左半边，这样一次遍历就可以同时完成slow,fast的定位和左半边反转	Easy	链表反转，避免空指针操作！		
