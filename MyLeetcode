@@ -112,6 +112,7 @@ BFS
 130	Surrounded Regions	从四个边界开始，如果有O，那么和O相连的所有O都不符合，直到找出所有和边界的O相连的O	Medium			
 515	Find Largest Value in Each Tree Row	BFS,DFS，简单	Medium			
 301	Remove Invalid Parentheses	要遍历两遍：从左到右和从右到左。从左到右移除多余的(, 从右到左移除多余的)。共用一个函数，从右到左时把string颠倒过来，()的顺序也颠倒，然后结束时把string复原输入到结果中	Hard			
+407	Trapping Rain Water II	//BFS: 用priorityqueue按照高度从小到大存放单元    //因为边界不能存水，所以从边界开始往内BFS遍历    //当遍历到的单元高度比边界低，则把该单元的存水加上，然后把该单元加入queue，注意：新加入的单元高度为与该单元相连的最高高度！	Hard			
 
 DFS						
 98	Validate Binary Search Tree	书上也有这题。三种解法！其中一种Iterative的方法是由In-order的iterative solution推广而来的。解法一涉及到java对象传递，min = root相当于min = new TreeNode(root)，改变了原来的地址引用，所以原来的引用对应的值不变，结果不对	Medium	http://mp.weixin.qq.com/s/LiQpm6LdLgdKi_qm8zB_zw	 java对象值传递和对象传递的总结 http://blog.csdn.net/beyond667/article/details/7849337	http://stackoverflow.com/questions/40480/is-java-pass-by-reference-or-pass-by-value
