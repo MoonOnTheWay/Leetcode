@@ -87,6 +87,7 @@ Binary Tree
 331	Verify Preorder Serialization of a Binary Tree	用入度，出度来解决，对一个合法的二叉树，总的indegree+outdegree一定等于0	Medium			
 449	Serialize and Deserialize BST	自己做的，做了挺久。。我是用BFS，按层从上到下依次来。Solution 2: Pre-Order	Medium	Integer.parseInt(string）把String型数字转成int型。例如："12"转成12		
 297	Serialize and Deserialize Binary Tree	和449一样。fb常考题！	Hard			
+314	Binary Tree Vertical Order Traversal	刚开始用DFS，是错的。因为根据题目要求，from top to bottom，需要先遍历上层的，再遍历下层的，即BFS！//我用了TreeMap对index自动排序，也可以用hashmap，但要保存min和max index  //设置一个和queue完全同步的index队列，保存每个结点的index	Medium			
 											
 排序						
 349	Intersection of Two Arrays	HashSet的用法。遍历用for循环,复杂度为O(n)。还可以用sort、二分查找，复杂度为O(nlogn)	Easy			
