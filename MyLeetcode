@@ -94,6 +94,7 @@ Binary Tree
 349	Intersection of Two Arrays	HashSet的用法。遍历用for循环,复杂度为O(n)。还可以用sort、二分查找，复杂度为O(nlogn)	Easy			
 350	Intersection of Two Arrays II	自己想出来的，跟答案思路一样。关键在于，map.get(x) + 1和- 1的操作。另外用ArrayList存储result，再输出到数组中	Easy	Solution to 3rd follow-up question		
 56	Merge Intervals	和452类似，对start排序，设置head和tail两个参数，注意一些边界情况的处理。循环结束要把最后一个interval加入进来。Collections.sort() operates on a List, and Arrays.sort() operates on an array	Medium			
+252	Meeting Rooms	检查是否有重叠区间。按start排序	Easy			
 253	Meeting Rooms II	和56很像，但较难。对于从小到大排列的每个end，在从小到大排列的start中查找是否存在start大于end，记录start的位置，对于之后的end，只需要在当前start之后继续查找。Solution2是用priorityqueue，加入的都是需要的room	Medium			
 321	Create Maximum Number	太难了！要反复复习！细节不写了，太多了，见代码注释。。。。	Hard			
 179	Larest Number	跟321的merge()有点类似，但不同！比如对于6,60，如果按照merge()和larger()，60 > 6，这样merge的结果是660.但是在本题中，结果变成606，所以不能简单地比较两字符串大小，而应比较两字符串两种拼接结果的大小！return (str2 + str1).compareTo(str1 + str2); 比较字符串是否相等，不能用==，而是a.equals(b)	Medium			
