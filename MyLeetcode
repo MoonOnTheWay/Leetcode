@@ -51,6 +51,7 @@
 576	Out of Boundary Paths	解法一：自己想的，DFS加缓存，但hashmap最后没通过，所以换成了三维数组，也可以换成二维数组。解法二：动规解法，从起点出发，一层一层递增。比较难想	Hard			
 100	Same Tree	dfs	Easy			
 375	Guess Number Higher or Lower II	//dp[left][right]表示在[left, right]之间的最少保证金    //我们的目的是找到[left, right]之间的某一个start point，使得从它开始的保证金最少    //we can choose k (i<=k<=j) as our guess, and pay price k. After our guess, the problem is divided into two subproblems. Notice we do not need to pay the money for both subproblems. We only need to pay the worst case (because the system will tell us which side we should go) to guarantee win. So dp[i][j] = max{k + max(dp[i][k-1], dp[k+1][j])},  (i<=k<=j)	Medium	刚开始我以为是一个不断的二分过程，找中位数。但这其实是错的，中位数并不一定是最优的		
+91	Decode Ways	dp[i] = s(i, i + 1) <= 26 ? (dp[i + 1] + dp[i + 2]) : dp[i + 1];     //含义是，如果当前数字与右边数字有两种组合可能，那么需要在dp[i + 1]的基础上加上i + 1单独切分的种类，有dp[i + 2]种    //只能从后往前遍历，不能从前往后，这是由于0的存在，不能以0位开头！	Medium			
 
 贪心算法		
 121	Best Time to Buy and Sell Stock 	如果延伸一下，给出的是当前价格和前一天价格的差价：{1, 7, 4, 11}, if he gives {0, 6, -3, 7}。用Kadane's Algorithm来解决	Easy			
