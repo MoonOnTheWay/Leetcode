@@ -212,6 +212,7 @@ Array
 1	Two Sum	和325一样，边加入边找	Easy			
 311	Sparse Matrix Multiplication	稀疏矩阵：很多0，所以需要跳过0，否则TLE。Solution 2: A sparse matrix can be represented as a sequence of rows, each of which is a sequence of (column-number, value) pairs of the nonzero values in the row.	Medium			
 277	Find the Celebrity	看答案的，挺怪异的。。不知道普通群众之间互相是否认识，只知道celebrity的特性。只知道candidate不认识他右边的所有人，不确定左边的情况，所以需要第二个pass	Medium			
+157	Read N Characters Given Read4		Easy			
 
 链表Linked List						
 234	Palindrome Linked List	//Solution 1: 先通过fast和slow遍历一遍数组，再把右半部分反转   //Solution 2: beat 94.52%。reverse左半边，这样一次遍历就可以同时完成slow,fast的定位和左半边反转	Easy	链表反转，避免空指针操作！		
