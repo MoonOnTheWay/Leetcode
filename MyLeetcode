@@ -90,6 +90,8 @@ Binary Tree
 297	Serialize and Deserialize Binary Tree	和449一样。fb常考题！	Hard			
 314	Binary Tree Vertical Order Traversal	刚开始用DFS，是错的。因为根据题目要求，from top to bottom，需要先遍历上层的，再遍历下层的，即BFS！//我用了TreeMap对index自动排序，也可以用hashmap，但要保存min和max index  //设置一个和queue完全同步的index队列，保存每个结点的index	Medium			
 257	Binary Tree Paths	if(root.left == null && root.right == null)   //这里之前犯了一个错：不是在root==null时加入path，而是在叶子结点加入path。前者导致的问题是叶子结点被重复加入	Easy			
+285	Inorder Successor in BST	My Solution: 不仅适用于BST，也适用于所有binary tree，也可以通过调换root,left,right的位置，改编成pre-order，post-order。Solution 2: 按照BST的特点来解，可以稍作变换改编成寻找predecessor	Medium			
+156	Binary Tree Upside Down	//和226有点类似 。My Solution: 不是in-place。     //Solution 2: in-place，关键在于，在改变当前节点时，把当前节点的left和right先保存起来	Medium			
 											
 排序						
 349	Intersection of Two Arrays	HashSet的用法。遍历用for循环,复杂度为O(n)。还可以用sort、二分查找，复杂度为O(nlogn)	Easy			
