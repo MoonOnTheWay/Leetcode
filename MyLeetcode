@@ -189,6 +189,8 @@ DFS
 161	One Edit Distance	多种情况，细心一点	Medium			
 60	Permutation Sequence	做了挺久。My Solution: 答案是对的，但是TLE。//数学角度推理：先确定第一位在哪个区间，然后第二位，第三位……    //写出推理过程公式，更便于代码书写	Medium			
 49	Group Anagrams	自己想的和答案一样，对每个String排序作为hashmap的key	Medium			
+13	Roman to Integer	罗马数字的特点。答案是直接把所有情况列出来	Easy			
+12	Integer to Roman	答案更直接，把每个范围内的整位数理出来	Medium			
 
 Array						
 88	Merge Sorted Array	双指针问题	Easy			
