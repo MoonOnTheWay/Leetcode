@@ -261,6 +261,7 @@ Bit Manipulation
 
 Design						
 155	Min Stack	自己做的，只用一个stack的解法，beat 87.87%	Easy			
+146	LRU Cache	FB的常考设计题，多复习！	Hard			
 
 Stack						
 503	Next Greater Element II	方法一：暴力；方法二：Stack。很巧妙！	Medium	http://mp.weixin.qq.com/s?__biz=MzAwMDk1MTUyNw==&mid=2247484355&idx=1&sn=863e6f2ebafef26a89cd0d3e89b453dd&chksm=9ae0564bad97df5dba9ebbae7b018df81873b0ae83d8b30b7206002c081ef8f9c91824aadb1d&scene=21#wechat_redirect		
