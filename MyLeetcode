@@ -222,6 +222,7 @@ Array
 157	Read N Characters Given Read4		Easy			
 238	Product of Array Except Self	//先从左往右第一个pass，算出每个数左边的所有数的乘积left；    //再从右往左第二个pass，算出每个数右边的所有数的乘积right，与left相乘，即为除了本身以外的所有数的乘积	Medium			
 380	Insert Delete GetRandom O(1)	当去掉某一个数后，list和map中在该数后面的数的index都需要跟着改变，所以应该把该数和list中最后一个数交换，然后删除最后一个数	Medium			
+398	Random Pick Index	//Resevoir Sampling:     //在取第n个数据的时候，我们生成一个0到1的随机数p，如果p小于1/n，保留第n个数。大于1/n，继续保留前面的数。直到数据流结束，返回此数。    //用数学归纳法证明	Medium	数学归纳法证明： http://blog.csdn.net/javastart/article/details/50610868		
 
 链表Linked List						
 234	Palindrome Linked List	//Solution 1: 先通过fast和slow遍历一遍数组，再把右半部分反转   //Solution 2: beat 94.52%。reverse左半边，这样一次遍历就可以同时完成slow,fast的定位和左半边反转	Easy	链表反转，避免空指针操作！		
