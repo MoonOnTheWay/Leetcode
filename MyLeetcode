@@ -95,6 +95,7 @@ Binary Tree
 156	Binary Tree Upside Down	//和226有点类似 。My Solution: 不是in-place。     //Solution 2: in-place，关键在于，在改变当前节点时，把当前节点的left和right先保存起来	Medium			
 543	Diameter of Binary Tree	竟然看了答案。。建立一个新函数，返回最大深度的同时，记录最长length	Easy			
 637	Average of Levels in Binary Tree	按层遍历。BFS queue或DFS Recursion	Easy			
+404	Sum of Left Leaves	简单	Easy			
 											
 排序						
 349	Intersection of Two Arrays	HashSet的用法。遍历用for循环,复杂度为O(n)。还可以用sort、二分查找，复杂度为O(nlogn)	Easy			
