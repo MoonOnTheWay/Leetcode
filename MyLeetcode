@@ -196,6 +196,7 @@ DFS
 13	Roman to Integer	罗马数字的特点。答案是直接把所有情况列出来	Easy			
 12	Integer to Roman	答案更直接，把每个范围内的整位数理出来	Medium			
 273	Integer to English Words	1-19归为一类，10-90的整十归为一类，剩下的递归处理	Hard			
+168	Excel Sheet Column Title	每次在左边插入新字母	Easy			
 
 Array						
 88	Merge Sorted Array	双指针问题	Easy			
