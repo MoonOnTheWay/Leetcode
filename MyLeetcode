@@ -239,6 +239,7 @@ Array
 234	Palindrome Linked List	//Solution 1: 先通过fast和slow遍历一遍数组，再把右半部分反转   //Solution 2: beat 94.52%。reverse左半边，这样一次遍历就可以同时完成slow,fast的定位和左半边反转	Easy	链表反转，避免空指针操作！		
 61	Rotate List	Solution 1: My solution, 仿照189。Start from one element and keep rotating until we have rotated n different elements. Solution 2: 把链表首尾串联	Medium			
 21	Merge Two Sorted Lists	递归解法	Easy			
+23	Merge k Sorted Lists	Solution 1: 用priority queue。Solution 2: mergeSort的思想，merge函数是21. Merge Two Sorted Lists中的	Hard			
 206	Reverse Linked List	自己写出来iterative解法，递归解法就是对iterative稍作改动	Easy			
 92	Reverse Linked List II	两种解法，重点在于virtual head，比较巧妙。我的解法是基于206，答案解法比较新	Medium			
 148	Sort List	Solution 1: MergeSort：比较好想，虚拟头结点的使用。Solution 2: QuickSort：答案的quicksort，交换的是节点的值，不是节点本身，不同于一般QuickSort从两边往中间，这种解法都是从左到右交换的	Medium			
