@@ -255,6 +255,7 @@ Graph
 133	Clone Graph	做了好久。。 DFS自己做出来了，但也经过几个弯路。BFS好难想。。。注意引用地址。详细见注释	Medium			
 207	Course Schedule	寻找图中有没有环。1、BFS解法。拓扑排序，环无法被去掉，所以count会小于结点数。2、DFS解法。对每一个结点依次进行深度搜索，如果回到出发点，则证明有环。改进的DFS解法！效率最高！beat 99.89%：visited不再是简单的true or false，而有0,1,2三个值：0表示未被访问，1表示正在被访问的当前路径上，2表示已经被访问并且被证明不在环上。	Medium	拓扑排序：http://blog.csdn.net/changyuanchn/article/details/17067349	ArrayList[] paths = new ArrayList[numCourses];  //error: cannot create array with '<>'，这里不能加<>。遍历的时候，(int)paths[root].get(i)强制类型转换！或者：ArrayList<Integer>[] paths = new ArrayList[numCourses]，不需要强制类型转换	
 210	Course Schedule II	仿照207，改进的DFS解法效率最高。但要注意：207中paths[pre[0]].add(pre[1])和paths[pre[1]].add(pre[0])都对，但本题只能是paths[pre[0]].add(pre[1])。因为本题要求的路径其实就是拓扑排序的定义，要把优先级最高的结点放在前面，所以从后置课向前置课进行遍历，遍历到尽头（或尽头的结点都已经被加入路径）时，即是当前优先级最高的前置课	Medium								
+323	Number of Connected Components in an Undirected Graph	求tree或者graph个数的套路。Union-Find； DFS	Medium			
 
 Bit Manipulation						
 136	Single Number	Bit Manipulation. 两次^，得到0	Easy			
