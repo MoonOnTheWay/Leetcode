@@ -205,6 +205,7 @@ DFS
 12	Integer to Roman	答案更直接，把每个范围内的整位数理出来	Medium			
 273	Integer to English Words	1-19归为一类，10-90的整十归为一类，剩下的递归处理	Hard			
 168	Excel Sheet Column Title	每次在左边插入新字母	Easy			
+214	Shortest Palindrome	答案很巧妙。。j最终的位置表示：j左边的字符串是最长回文字符串，或者是j左边的字符在j的右边都逆序出现过，所以要继续递归检查直到为回文字符串	Hard			
 
 Array						
 88	Merge Sorted Array	双指针问题	Easy			
