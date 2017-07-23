@@ -175,6 +175,7 @@ DFS
 241	Different Ways to Add Parentheses	（记得用hashmap缓存结果！）记录运算符的下标，然后对于每一个运算符，都可以将当前的表达式分成左右两部分：将左右两部分的数字进行组合，就可以得到当前递归的答案集合‘如果当前表达式没有运算符，则返回当前表达式的数字。	Medium	http://mp.weixin.qq.com/s?__biz=MzAwMDk1MTUyNw==&mid=2247484844&idx=1&sn=2d9d8a78ecf27258d5f7223b7b95d77a&chksm=9ae05024ad97d9324f394474e5bebaa5c13ed4bb77c6255825de62e2f7bf4cd2f1c5e585a7e4&mpshare=1&scene=23&srcid=0502YuXSifSbQf1F7f2VAwwv#rd	分治法 http://blog.jobbole.com/83944/	
 4	Median of Two Sorted Arrays	经典难题，Algorithms上面也有。二分法，也是分治法思想。Time: O(log(min(m, n)))	Hard	http://mp.weixin.qq.com/s?__biz=MzAwMDk1MTUyNw==&mid=2247484853&idx=1&sn=20c8931836c07bdbdb6556aecbbd0cdf&chksm=9ae0503dad97d92b1062193a0057ca0ba64d4709ffe43791d6e1bfbe8986fd4a60cdb1ed7040&mpshare=1&scene=23&srcid=05069Iquuw2CJ7IMguOJ3gsQ#rd		
 312	Burst Balloons	分治法的反向思维！见注释。可以有两种实现方法：自顶向下递归加缓存，和自底向上循环。很经典！其中，cache[left][right]和dp[left][right]都表示以left和right为边界的区间内最大的得分	Hard			
+218	The Skyline Problem	//Solution 2: 分治法，两两合并，再继续合并，直至合并成一个，例如对于前两个building合并的结果是:{2, 10},(3, 15),(7,10),(9, 0)    //合并的思路和Solution 1一样。按照横坐标的位置从左往右遍历，更新当前的最高高度，如果当前高度和result中前一个高度不同，把新坐标和高度加入result    //对于单个区域，边界记为：(left, height)和(right, 0)，这也正是题目对于区域边界记录的定义    //于Solution 1相比，不需要每次在队列中查找并删除每个高度，因此效率高很多	Hard			
 
 数学/String						
 67	Add Binary	用StringBuilder提高效率	Easy			
@@ -299,7 +300,6 @@ Stack
 Heap(PriorityQueue)						
 239	Sliding Window Maximum	//第一次使用双向队列dequeue    //在dequeue中存储的数由左往右递减排列，相当于一个优先队列。每次窗口右移一格时，把超出k窗口大小的数移出，然后把小于新元素的数移出，再加入新元素。    //此时dequeue中最顶端（左）的数就是k范围内的最大数	Hard	ArrayDeque的使用		
 295	Find Median from Data Stream	两个pq，一个存放前半段，逆序排列，一个存放后半段，正序排列	Hard			
-218	The Skyline Problem	Our final solution, then, in O(nlogn)O(nlog⁡n) time, is as follows. First, sort the critical points. Then scan across the critical points from left to right. When we encounter the left edge of a rectangle, we add that rectangle to the heap with its height as the key. When we encounter the right edge of a rectangle, we remove that rectangle from the heap. (This requires keeping external pointers into the heap.) Finally, any time we encounter a critical point, after updating the heap we set the height of that critical point to the value peeked from the top of the heap.	Hard			
 
 Trie						
 472	Concatenated Words	方法一：139. Word Break的延伸。自己的解法报错；方法二：Trie树。使用hash：建立hash的复杂度为O(n * len), 查询的复杂度为O(n * len^2)；使用Trie：建立Trie的复杂度为O(n * len), 查询的复杂度为O(n * len)	Hard	http://blog.csdn.net/hackbuteer1/article/details/7964147	使用Trie：因为当查询如字符串abc是否为某个字符串的前缀时，显然以b、c、d....等不是以a开头的字符串就不用查找了，这样迅速缩小查找的范围和提高查找的针对性	
