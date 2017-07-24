@@ -139,6 +139,7 @@ DFS
 114	Flatten Binary Tree to Linked List	Four Solutions！多复习！	Medium		
 547	Friend Circles	"方法一.复习Union-Find！ 这个问题还可以换个说法：找出Tree的个数。set the unvisited node as the root, and find the whole tree rooted at it, in the process, set all the nodes in this tree as visited  方法二：BFS 方法三： DFS"	Medium	http://blog.csdn.net/dm_vincent/article/details/7655764		
 200	Number of Islands	和547套路一样，三种方法。但id[]的个数不再只是n，而是m * n，矩阵中每个点都代表一个位置	Medium					
+305	Number of Islands II	//自己想到的: 一边加入position一边计算每个时刻的count，这样每次加入时只需要进行一次find()操作，即log(m * n)    //find操作复杂度O(log n)，union操作复杂度O(1)    //对于四周四个位置，通过id是否为-1来判断是否为1。也可以再设置一个matrix[m][n]，这样就直接用模板不需要改动了    //在合并root时，注意应同时更新root1的值，因为有四个方向，root1可能发生改动。或者就是在每个direction时都重新 root1 = find(root1)	Hard			
 261	Graph Valid Tree	和547类似，巩固union-find。if(root1 == root2) return false; 说明一条边的两个端点已经被连接在一个tree上，此时重复出现，说明有环       //DFS：需要记录parent，这点没想到。形成环的条件：回到一个已经被访问的结点，且该结点不是当前结点parent，因为parent和children之间本来就是无向互连    //只需要从某一个结点开始，把所有相连或者间接相连的结点都遍历一遍。而不是从每一个结点开始，运行helper函数    //最后检查是否所有结点都被访问过，如果否，说明有没有连通的结点	Medium			
 108	Convert Sorted Array to Binary Search Tree	递归，比较简单，都属于那一类的	Easy			
 494	Target Sum	第一个答案的方法！sum(P) = (target + sum(nums)) / 2。然后转化为求和为某个值的subset的个数	Medium			
