@@ -298,6 +298,7 @@ Stack
 591	Tag Validator	直接看答案的。很繁琐，但不难//string.startsWith(),和indexOf()的应用    //Character.isUpperCase()	Hard			
 255	Verify Preorder Sequence in Binary Search Tree	看答案的。把递减序列加入stack中，这表示当前序列在左分支上。当遍历到右分支，pop所有比当前数小的数，并且保留其中最大的为min，作为接下来序列的下边界，若下一个数小于min，则返回false。Solution 1: Space: O(n), using stack。Solution 2: Space: O(1), using preorder[]	Medium			
 316	Remove Duplicate Letters	//Solution 1: 递归解法    //每次需要重新计算每个字母的出现个数，效率低   //Solution 2: Iterative Soluition    //beat 99.4%    //map用来记录当前遍历的字母右边每个字母的个数，如果右边的某个字母个数==0，则说明右边不再有这个字母，只有左边有，所以当前字母不能取代左边的字母    //visited用来表示当前result中是否有该字母，如果已经有，则直接跳过，    //遍历时，把当前字母与result的最后一个字母比较，如果当前字母更小且当前字母右边仍有result中的字母，则把result中的字母替换成当前字母	Hard			
+388	Longest Absolute File Path	注意：\t, \n的长度均为1，因为\是转义字符，不算入长度的计算.Solution 1: 用stack. Solution 2: 用数组代替stack	Medium			
 
 Heap(PriorityQueue)						
 239	Sliding Window Maximum	//第一次使用双向队列dequeue    //在dequeue中存储的数由左往右递减排列，相当于一个优先队列。每次窗口右移一格时，把超出k窗口大小的数移出，然后把小于新元素的数移出，再加入新元素。    //此时dequeue中最顶端（左）的数就是k范围内的最大数	Hard	ArrayDeque的使用		
