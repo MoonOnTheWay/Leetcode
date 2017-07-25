@@ -243,6 +243,7 @@ Array
 398	Random Pick Index	//Resevoir Sampling:     //在取第n个数据的时候，我们生成一个0到1的随机数p，如果p小于1/n，保留第n个数。大于1/n，继续保留前面的数。直到数据流结束，返回此数。    //用数学归纳法证明	Medium	数学归纳法证明： http://blog.csdn.net/javastart/article/details/50610868		
 31	Next Permutation	做过类似的题。从右往左，找到第一个比右边数小的数，记录位置i。然后从右往左找到第一个比该数大的数，和i交换。最后对i右边的序列进行排序，也就是reverse，因为右边序列已经是递减的	Medium			
 643	Maximum Average Subarray I	自己做的，滑动窗口，很简单	Easy			
+628	Maximum Product of Three Numbers	保存三个最大的正数和两个最小的负数	Easy			
 
 链表Linked List						
 234	Palindrome Linked List	//Solution 1: 先通过fast和slow遍历一遍数组，再把右半部分反转   //Solution 2: beat 94.52%。reverse左半边，这样一次遍历就可以同时完成slow,fast的定位和左半边反转	Easy	链表反转，避免空指针操作！		
