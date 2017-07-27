@@ -102,6 +102,7 @@ Binary Tree
 404	Sum of Left Leaves	简单	Easy			
 617	Merge Two Binary Trees	看了答案	Easy			
 538	Convert BST to Greater Tree	自己做的	Easy			
+623	Add One Row to Tree	自己做的	Medium			
 											
 排序						
 349	Intersection of Two Arrays	HashSet的用法。遍历用for循环,复杂度为O(n)。还可以用sort、二分查找，复杂度为O(nlogn)	Easy			
@@ -152,6 +153,7 @@ DFS
 529	Minesweeper	自己做的DFS	Medium			
 514	Freedom Trail	每步最优，最终解并不一定是最优！// Solution 1: DFS+cache // Solution2：动规：dp[i][j]表示从ring的第j个位置开始，拼出key的第i个位置以后的所有字母，我们最终要求的是dp[0][0],递推关系是：                   dp[i][j] = Min{dp[i + 1][k] + |j - k|}	Hard			
 129	Sum Root to Leaf Numbers	自己做的太麻烦了，先转成arraylist再转成int，很复杂.答案思路，DFS过程中，每往下一层，sum乘10再加上当前val	Medium			
+124	Binary Tree Maximum Path Sum	//we need to keep track of the maxSum so far    //helper(root) returns the maximum branch containing root	Hard			
 
 回溯法						
 401	Binary Watch	第一次回溯法！！做了挺久，记住这题，典型案例；位操作	Easy			
@@ -286,6 +288,7 @@ Bit Manipulation
 421	Maximum XOR of Two Numbers in an Array	看答案想了半天。。从左往右，从高位往低位，一位一位的检查，是否存在两个数的该位相反，如果有，把max的该位置1	Medium			
 318	Maximum Product of Word Lengths	位操作：把每一个字符串都用一个二进制数表示，每一位表示一个字母。判断两字符串是否有重复字符，用&操作即可	Medium			
 461	Hamming Distance	先异或，再数xor的1的个数	Easy			
+477	Total Hamming Distance	对于每个位，计算nums中每个数该位为1的个数，然后为1的个数*为0的个数即为total	Medium			
 
 Design						
 155	Min Stack	自己做的，只用一个stack的解法，beat 87.87%	Easy			
