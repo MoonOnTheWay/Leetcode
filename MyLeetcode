@@ -173,6 +173,7 @@ DFS
 526	Beautiful Arrangement	1.自己的解法：用hashset记录访问过的节点。2.解法二：用数组代替hashset。3.对解法二改进：把从前往后改成从后往前。beat 95.48%！因为这样可以避免搜索过深：从前往后的话，前面的索引值比较小，容易被整除，所以会一直向下搜索。从后往前则可以在比较浅的位置中断错误路径。4.解法四：用swap函数代替visited。好处是完全避免了是否重复的判断，效率更高,beat 98%	Medium			
 17	Letter Combinations of a Phone Number	Solution 1: FIFO queue ////Solution 2: 回溯法	Medium			
 351	Android Unlock Patterns	看题目看了好久才懂。。就是手机手势解锁问题。先把jump[][]定义好，然后用DFS回溯	Medium			
+22	Generate Parentheses	//原理是：合法的字符串，从左往右任一时刻，)的个数都应小于等于(    //当(的个数没有超过n时，可以继续添加(    //当)的个数没有超过(时，可以添加)	Medium			
 
 分治算法						
 241	Different Ways to Add Parentheses	（记得用hashmap缓存结果！）记录运算符的下标，然后对于每一个运算符，都可以将当前的表达式分成左右两部分：将左右两部分的数字进行组合，就可以得到当前递归的答案集合‘如果当前表达式没有运算符，则返回当前表达式的数字。	Medium	http://mp.weixin.qq.com/s?__biz=MzAwMDk1MTUyNw==&mid=2247484844&idx=1&sn=2d9d8a78ecf27258d5f7223b7b95d77a&chksm=9ae05024ad97d9324f394474e5bebaa5c13ed4bb77c6255825de62e2f7bf4cd2f1c5e585a7e4&mpshare=1&scene=23&srcid=0502YuXSifSbQf1F7f2VAwwv#rd	分治法 http://blog.jobbole.com/83944/	
