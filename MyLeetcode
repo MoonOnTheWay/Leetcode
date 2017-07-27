@@ -285,6 +285,7 @@ Bit Manipulation
 389	Find the Difference	Solution2: Bit Manipulation,利用异或的性质	Easy			
 421	Maximum XOR of Two Numbers in an Array	看答案想了半天。。从左往右，从高位往低位，一位一位的检查，是否存在两个数的该位相反，如果有，把max的该位置1	Medium			
 318	Maximum Product of Word Lengths	位操作：把每一个字符串都用一个二进制数表示，每一位表示一个字母。判断两字符串是否有重复字符，用&操作即可	Medium			
+461	Hamming Distance	先异或，再数xor的1的个数	Easy			
 
 Design						
 155	Min Stack	自己做的，只用一个stack的解法，beat 87.87%	Easy			
