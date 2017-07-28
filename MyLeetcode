@@ -59,6 +59,7 @@
 221	Maximal Square	//dp    //对于为1的位置，增加正方形的边长的条件是：该位置 Min(左，上，左上对角线的位置对应的边长) + 1	Medium			
 256	Paint House	265是它的拓展版本，265的解法更通用	Easy			
 265	Paint House II	只需要保存每个时刻的两个最小总费用即可。假设前n-1个房子的最小cost和第二小cost分别为sum1, sum2，第n个房子的最小cost为curr1, curr2，如果curr1对应的颜色和sum1对应的颜色不同，那么前n个房子的最小cost一定为sum1 + curr1；否则，前n个最小cost为Min{sum1 + curr2, sum2 + curr1}	Hard			
+276	Paint Fence	题目意思是，最多有两两相邻的颜色相同，不是指所有posts中最多只能有两个相邻的颜色相同。如果当前颜色和前一个颜色取不同，则无论前一个和前前颜色是否相同，当前都有k - 1种取法；如果当前颜色和前一个颜色取相同，则前一个和前前颜色必须不同，且当前只有1种取法。把这两种可能性加起来即为结果。	Easy			
 
 贪心算法		
 121	Best Time to Buy and Sell Stock 	如果延伸一下，给出的是当前价格和前一天价格的差价：{1, 7, 4, 11}, if he gives {0, 6, -3, 7}。用Kadane's Algorithm来解决	Easy			
