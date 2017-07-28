@@ -185,6 +185,7 @@ DFS
 4	Median of Two Sorted Arrays	经典难题，Algorithms上面也有。二分法，也是分治法思想。Time: O(log(min(m, n)))	Hard	http://mp.weixin.qq.com/s?__biz=MzAwMDk1MTUyNw==&mid=2247484853&idx=1&sn=20c8931836c07bdbdb6556aecbbd0cdf&chksm=9ae0503dad97d92b1062193a0057ca0ba64d4709ffe43791d6e1bfbe8986fd4a60cdb1ed7040&mpshare=1&scene=23&srcid=05069Iquuw2CJ7IMguOJ3gsQ#rd		
 312	Burst Balloons	分治法的反向思维！见注释。可以有两种实现方法：自顶向下递归加缓存，和自底向上循环。很经典！其中，cache[left][right]和dp[left][right]都表示以left和right为边界的区间内最大的得分	Hard			
 218	The Skyline Problem	//Solution 2: 分治法，两两合并，再继续合并，直至合并成一个，例如对于前两个building合并的结果是:{2, 10},(3, 15),(7,10),(9, 0)    //合并的思路和Solution 1一样。按照横坐标的位置从左往右遍历，更新当前的最高高度，如果当前高度和result中前一个高度不同，把新坐标和高度加入result    //对于单个区域，边界记为：(left, height)和(right, 0)，这也正是题目对于区域边界记录的定义    //于Solution 1相比，不需要每次在队列中查找并删除每个高度，因此效率高很多	Hard			
+282	Expression Add Operators	回溯法，DFS。//注意用long型保存当前数和value    //对于乘法要特别处理！很巧妙！multi的设置，保存在上一个操作中加上/减去的数值，在当前乘法操作中，先减去multi，再加上multi * curr	Hard			
 
 数学/String						
 67	Add Binary	用StringBuilder提高效率	Easy			
