@@ -54,6 +54,7 @@
 100	Same Tree	dfs	Easy			
 375	Guess Number Higher or Lower II	//dp[left][right]表示在[left, right]之间的最少保证金    //我们的目的是找到[left, right]之间的某一个start point，使得从它开始的保证金最少    //we can choose k (i<=k<=j) as our guess, and pay price k. After our guess, the problem is divided into two subproblems. Notice we do not need to pay the money for both subproblems. We only need to pay the worst case (because the system will tell us which side we should go) to guarantee win. So dp[i][j] = max{k + max(dp[i][k-1], dp[k+1][j])},  (i<=k<=j)	Medium	刚开始我以为是一个不断的二分过程，找中位数。但这其实是错的，中位数并不一定是最优的		
 91	Decode Ways	dp[i] = s(i, i + 1) <= 26 ? (dp[i + 1] + dp[i + 2]) : dp[i + 1];     //含义是，如果当前数字与右边数字有两种组合可能，那么需要在dp[i + 1]的基础上加上i + 1单独切分的种类，有dp[i + 2]种    //只能从后往前遍历，不能从前往后，这是由于0的存在，不能以0位开头！	Medium			
+639	Decode Ways II	仿照91，自己做出来的	Hard			
 10	Regular Expression Matching	太难了，看答案看了好久= =。解释见注释。dp[i][j]表示s的i前面部分与p的j前面部分是否match	Hard			
 85	Maximal Rectangle	//height表示以当前行为底，当前列的1的高度    //left表示当前列的左边界，left = max(当前行的左边界，上一行的左边界)，分别表示和当前行共同组成矩形、和上一行共同组成矩形    //right表示当前列的右边界，right = min(当前行的右边界，上一行的右边界)	Hard			
 221	Maximal Square	//dp    //对于为1的位置，增加正方形的边长的条件是：该位置 Min(左，上，左上对角线的位置对应的边长) + 1	Medium			
