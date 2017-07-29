@@ -258,6 +258,7 @@ Array
 565	Array Nesting	从不同i开始的数组不会有重复，所以可以把遍历过的位置标为-1，而不需要恢复原状	Medium			
 621	Task Scheduler	Solution 1: 先利用出现次数最多的几个task构造出frame，然后往里填剩余task。   //Solution 2: 用PriorityQueue.在每个n的区间内，按照出现频率高低添加不同的task。如果能不填满n，说明需要加idle补齐n。对于最后一个区间n，不需要补齐。	Medium			
 358	Rearrange String k Distance Apart	//和621类似，但621只需要找到长度，本题需要把字符串输出    //不用pq，因为pq只能判断频率，但对于相同频率的不同字母，我们还需要知道每个字母的前一个位置，在当前位置是否合法	Hard			
+128	Longest Consecutive Sequence	//map中存放每个数和它所在最长连续序列的长度    //每次加入新数和新长度后，需要更新该数所在连续序列的上下限对应的长度！序列中间的数对应的长度则不需要变，因为之后的新数只会插入在left左边或者right右边    	Hard			
 
 链表Linked List						
 234	Palindrome Linked List	//Solution 1: 先通过fast和slow遍历一遍数组，再把右半部分反转   //Solution 2: beat 94.52%。reverse左半边，这样一次遍历就可以同时完成slow,fast的定位和左半边反转	Easy	链表反转，避免空指针操作！		
