@@ -206,6 +206,7 @@ DFS
 345	Reverse Vowels of a String	用HashMap查找	Easy			
 76	Minimum Window Substring	解决substring问题的模板	Hard			
 159	Longest Substring with At Most Two Distinct Characters	按照上题的模板。76是对于valid的情况，make it invalid; 159是对于invalid的情况，make it valid	Hard			
+340	Longest Substring with At Most K Distinct Characters	复习159，做法完全一样。复习substring的模板解法	Hard			
 3	Longest Substring Without Repeating Characters	依然按照76的模板。是对于invalid的情况，make it valid	Medium			
 71	Simplify Path	自己的解法，比较难，没有用自带的函数；答案的解法利用split()函数简化操作	Medium			
 30	Substring with Concatenation of All Words	不太难，和答案的思路一样，在字符串中查找多个子字符串，一般可以用hashmap存储子字符串	Hard			
