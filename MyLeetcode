@@ -222,6 +222,7 @@ DFS
 168	Excel Sheet Column Title	每次在左边插入新字母	Easy			
 214	Shortest Palindrome	答案很巧妙。。j最终的位置表示：j左边的字符串是最长回文字符串，或者是j左边的字符在j的右边都逆序出现过，所以要继续递归检查直到为回文字符串	Hard			
 482	License Key Formatting	if(sb.length() % (K + 1) == K) sb.append('-');这步是关键	Medium			
+418	Sentence Screen Fitting	//将sentence展开，用空格隔开。从0开始，每次加cols即为下一行的第一个数    //但需要考虑：若对应的数字是‘ ’，不能以空白开头，所以需要加一，变为下一个数字    //若对应的数字左边也是数字，说明是一个数被分行了，需要减一直到左边是空白，此时指向的位置是一个数的开头	Medium			
 
 Array						
 88	Merge Sorted Array	双指针问题	Easy			
