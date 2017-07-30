@@ -311,6 +311,7 @@ Design
 635	Design Log Storage System	利用String.compareTo(),把每个字符串的index前的部分和上下限前半段比较 	Medium			
 535	Encode and Decode TinyURL	Solution的几种方法分析写得非常好	Medium			
 281	Zigzag Iterator	k个list的通用模板。利用iterator	Medium			
+346	Moving Average from Data Stream	需要保存size个数，因为i处的sum需要用到i - size位置的数，而i之后的数又需要用到i - size之后的数。所以要把这size个数都保存下来	Easy			
 
 Stack						
 503	Next Greater Element II	方法一：暴力；方法二：Stack。很巧妙！	Medium	http://mp.weixin.qq.com/s?__biz=MzAwMDk1MTUyNw==&mid=2247484355&idx=1&sn=863e6f2ebafef26a89cd0d3e89b453dd&chksm=9ae0564bad97df5dba9ebbae7b018df81873b0ae83d8b30b7206002c081ef8f9c91824aadb1d&scene=21#wechat_redirect		
