@@ -62,6 +62,7 @@
 265	Paint House II	只需要保存每个时刻的两个最小总费用即可。假设前n-1个房子的最小cost和第二小cost分别为sum1, sum2，第n个房子的最小cost为curr1, curr2，如果curr1对应的颜色和sum1对应的颜色不同，那么前n个房子的最小cost一定为sum1 + curr1；否则，前n个最小cost为Min{sum1 + curr2, sum2 + curr1}	Hard			
 276	Paint Fence	题目意思是，最多有两两相邻的颜色相同，不是指所有posts中最多只能有两个相邻的颜色相同。如果当前颜色和前一个颜色取不同，则无论前一个和前前颜色是否相同，当前都有k - 1种取法；如果当前颜色和前一个颜色取相同，则前一个和前前颜色必须不同，且当前只有1种取法。把这两种可能性加起来即为结果。	Easy			
 361	Bomb Enemy	//O(m * n)    //当遍历到的当前位置左边或者上边是W，说明当前位置“越界”，需要重新划分新区域并且计算新区域的enemy数	Medium			
+120	Triangle	//从下往上。minpath[k][i] = min( minpath[k+1][i], minpath[k+1][i+1]) + triangle[k][i];    //但由于minpath[k+1] would be useless after minpath[k] is computed,可以把二元数组换成一元数组 //minpath[i] = min( minpath[i], minpath[i+1]) + triangle[k][i]; 	Medium			
 
 贪心算法		
 121	Best Time to Buy and Sell Stock 	如果延伸一下，给出的是当前价格和前一天价格的差价：{1, 7, 4, 11}, if he gives {0, 6, -3, 7}。用Kadane's Algorithm来解决	Easy			
