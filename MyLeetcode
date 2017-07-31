@@ -65,6 +65,9 @@
 120	Triangle	//从下往上。minpath[k][i] = min( minpath[k+1][i], minpath[k+1][i+1]) + triangle[k][i];    //但由于minpath[k+1] would be useless after minpath[k] is computed,可以把二元数组换成一元数组 //minpath[i] = min( minpath[i], minpath[i+1]) + triangle[k][i]; 	Medium			
 60	Unique Paths	自己做的，从finish推到start，也可以从start推到finish	Medium			
 64	Minimum Path Sum	和60类似。自己做的，没有用额外空间	Medium			
+322	Coin Change	模仿279，自己做的	Medium			
+309	Best Time to Buy and Sell Stock with Cooldown	//buy[i]表示i之前以buy结尾的最大收益(可能在i时刻buy，也可能在i时刻之前buy)    //sell[i]表示i之前以sell结尾的最大收益(可能在i时刻sell，也可能在i时刻之前sell)    //buy[i]有两种可能：1. i时刻buy，则必须在i - 2或者之前sell；2. i时刻不buy，则在i时刻之前buy，即buy[i - 1]    //sell[i]有两种可能：1. i时刻sell，则必须在i - 1时刻或者之前buy；2. i时刻不sell，则在i时刻之前sell，即sell[i - 1]    //buy[i] = max(sell[i-2]-price, buy[i-1])     //sell[i] = max(buy[i-1]+price, sell[i-1])	Medium			
+376	Wiggle Subsequence	//up[i]表示以up结尾的最长wiggle subsequence长度    //down[i]表示以down结尾的最长wiggle subsequence长度    /*    If nums[i] > nums[i-1], up[i] = down[i-1] + 1;     If nums[i] < nums[i-1], down[i] = up[i-1] + 1;     If nums[i] == nums[i-1], down[i] and up[i] keep the same.    */    //再把空间复杂度降到O(1)	Medium	和309类似。两个dp[]分别存储以不同性质结尾的最大长度。两个dp之间互相利用		
 
 贪心算法		
 121	Best Time to Buy and Sell Stock 	如果延伸一下，给出的是当前价格和前一天价格的差价：{1, 7, 4, 11}, if he gives {0, 6, -3, 7}。用Kadane's Algorithm来解决	Easy			
