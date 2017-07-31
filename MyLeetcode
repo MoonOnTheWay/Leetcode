@@ -64,6 +64,7 @@
 361	Bomb Enemy	//O(m * n)    //当遍历到的当前位置左边或者上边是W，说明当前位置“越界”，需要重新划分新区域并且计算新区域的enemy数	Medium			
 120	Triangle	//从下往上。minpath[k][i] = min( minpath[k+1][i], minpath[k+1][i+1]) + triangle[k][i];    //但由于minpath[k+1] would be useless after minpath[k] is computed,可以把二元数组换成一元数组 //minpath[i] = min( minpath[i], minpath[i+1]) + triangle[k][i]; 	Medium			
 60	Unique Paths	自己做的，从finish推到start，也可以从start推到finish	Medium			
+64	Minimum Path Sum	和60类似。自己做的，没有用额外空间	Medium			
 
 贪心算法		
 121	Best Time to Buy and Sell Stock 	如果延伸一下，给出的是当前价格和前一天价格的差价：{1, 7, 4, 11}, if he gives {0, 6, -3, 7}。用Kadane's Algorithm来解决	Easy			
