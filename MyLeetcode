@@ -271,6 +271,7 @@ Array
 358	Rearrange String k Distance Apart	//和621类似，但621只需要找到长度，本题需要把字符串输出    //不用pq，因为pq只能判断频率，但对于相同频率的不同字母，我们还需要知道每个字母的前一个位置，在当前位置是否合法	Hard			
 128	Longest Consecutive Sequence	//map中存放每个数和它所在最长连续序列的长度    //每次加入新数和新长度后，需要更新该数所在连续序列的上下限对应的长度！序列中间的数对应的长度则不需要变，因为之后的新数只会插入在left左边或者right右边    	Hard			
 163	Missing Ranges	难点在于考虑溢出的各种情况，最后把需要加减1的变量都设为long型	Medium			
+66	Plus One		Easy			
 
 链表Linked List						
 234	Palindrome Linked List	//Solution 1: 先通过fast和slow遍历一遍数组，再把右半部分反转   //Solution 2: beat 94.52%。reverse左半边，这样一次遍历就可以同时完成slow,fast的定位和左半边反转	Easy	链表反转，避免空指针操作！		
