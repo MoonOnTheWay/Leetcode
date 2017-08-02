@@ -81,6 +81,7 @@
 435	Non-overlapping Intervals	和452类似。对end进行排序	Medium			
 451	Sort Characters By Frequency	多种解法，不同数据结构的运用：1.HashMap(map.keySet()用来遍历哈希表) 2.ArrayList对象的数组 3.StringBuilder(sb.append(), sb.toString()) 4.PriorityQueue(pq.offer(), pq.poll()) 5.字符串转成字符数组：str.toCharArray()，反之String.valueOf(char_array)，或者String str = new(chararray);	Medium	http://mp.weixin.qq.com/s?__biz=MzAwMDk1MTUyNw==&mid=2247484373&idx=1&sn=c298e0c02fca13016188212b71efde79&chksm=9ae0565dad97df4ba4daffaa438e8ee2939aac8515f6516548dd19ee65e0f80b0ffc26aadf7b&scene=21#wechat_redirect	https://docs.oracle.com/javase/7/docs/api/java/util/PriorityQueue.html	
 55	Jump Game	记录当前能到达的最远位置。若i大于max，说明到不了i，返回false	Medium			
+45	Jump Game II	设置一个end表示当前jump内可以到达的最远位置。当超出end范围时，说明需要进行下一次jump，同时更新新的jump内的end范围	Hard			
 
 Binary Tree						
 102	Binary Tree Level Order Traversal	两种解法：1. BFS，用queue实现。2. DFS，用递归实现。队列的语法： Queue<Integer> queue = new LinkedList<Integer>(); queue.offer(value); queue.poll()	Medium			
