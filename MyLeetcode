@@ -29,7 +29,7 @@
 392	Is Subsequence	对于follow-up，参考答案的解法，用binary search，O(N) time for pre-processing, O(Mlog?) for each S.	Medium	String.indexOf(target, i)：从i开始查找target		
 
 动态规划						
-174	Dungeon Game	动态规划。从右下角到左上角	Hard	http://mp.weixin.qq.com/s/Zkir5lVALEaINd8YKBKqpw		
+174	Dungeon Game	动态规划。从右下角到左上角。dp[i][j]表示从(i, j)到右下角终点的最少血量。还可以优化空间复杂度。因为只用到i+1时刻的值，所以可以降维。(dp[j], dp[j + 1])相当于(dp[i + 1][j], dp[i][j + 1]) 	Hard	http://mp.weixin.qq.com/s/Zkir5lVALEaINd8YKBKqpw				
 70	Climbing Stairs	斐波拉契数列，自顶向下和自底向上	Easy	http://mp.weixin.qq.com/s/C22y-pCAS4Zahkds6T8f3g
 523	Continuous Subarray Sum	自己用了HashSet而不是HashMap，效率更高。边界条件太多，要自己想case！很多次才通过。把k=0和k=1分开处理，防止出错	Medium	http://mp.weixin.qq.com/s?__biz=MzAwMDk1MTUyNw==&mid=2247484808&idx=1&sn=7720cc96361903921659f75113d084f7&chksm=9ae05000ad97d916094b26749fe273453314663070192c88f9c72307c769624107820fd6b6fc&mpshare=1&scene=1&srcid=0426tM9zglNiIHcpNClS46vX#rd
 560	Subarray Sum Equals K	要用hashmap，不仅记录sum，还要记录每个sum出现的次数，因为可能有重复元素！	Medium			
