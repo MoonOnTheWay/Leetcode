@@ -57,6 +57,7 @@
 91	Decode Ways	dp[i] = s(i, i + 1) <= 26 ? (dp[i + 1] + dp[i + 2]) : dp[i + 1];     //含义是，如果当前数字与右边数字有两种组合可能，那么需要在dp[i + 1]的基础上加上i + 1单独切分的种类，有dp[i + 2]种    //只能从后往前遍历，不能从前往后，这是由于0的存在，不能以0位开头！	Medium			
 639	Decode Ways II	仿照91，自己做出来的	Hard			
 10	Regular Expression Matching	太难了，看答案看了好久= =。解释见注释。dp[i][j]表示s的i前面部分与p的j前面部分是否match	Hard			
+44	Wildcard Matching	My Solution: 模仿10. Regular Expression Matching的套路。Solution 2: 用四个指针，很巧妙	Hard	http://yucoding.blogspot.com/2013/02/leetcode-question-123-wildcard-matching.html		
 85	Maximal Rectangle	//height表示以当前行为底，当前列的1的高度    //left表示当前列的左边界，left = max(当前行的左边界，上一行的左边界)，分别表示和当前行共同组成矩形、和上一行共同组成矩形    //right表示当前列的右边界，right = min(当前行的右边界，上一行的右边界)	Hard			
 221	Maximal Square	//dp    //对于为1的位置，增加正方形的边长的条件是：该位置 Min(左，上，左上对角线的位置对应的边长) + 1	Medium			
 256	Paint House	265是它的拓展版本，265的解法更通用	Easy			
