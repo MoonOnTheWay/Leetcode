@@ -285,6 +285,7 @@ Array
 448	Find All Numbers Disappeared in an Array	不能把遍历过的数都置为-1，因为之后还会用到本来的值。所以置为相反数	Easy			
 442	Find All Duplicates in an Array	和448一个套路	Medium			
 485	Max Consecutive Ones	我的解法设置left和right，答案解法只设置一个count。更简单	Easy			
+605	Can Place Flowers	LinkedIn面经。optimized方法: 当count>=n时，直接返回true。	Easy			
 
 链表Linked List						
 234	Palindrome Linked List	//Solution 1: 先通过fast和slow遍历一遍数组，再把右半部分反转   //Solution 2: beat 94.52%。reverse左半边，这样一次遍历就可以同时完成slow,fast的定位和左半边反转	Easy	链表反转，避免空指针操作！		
