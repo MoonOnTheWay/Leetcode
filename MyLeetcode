@@ -122,6 +122,7 @@ Binary Tree
 298	Binary Tree Longest Consecutive Sequence	//自顶向下，下层函数会用到上层函数的参数，通过函数传参的方式。同时因为binary tree遍历只能从上往下，所以还需要一个参数存储父节点的值    //自底向上，上层函数会用到下层函数的参数，通过函数返回值的方式。且不需要参数存储子节点的值，因为可以通过root.left/right获得	Medium			
 549	Binary Tree Longest Consecutive Sequence II	//看了Solution的动图，然后自己写的代码    //对每个节点，用数组保存两个值：以当前节点为根的最长连续递增长度len1；以当前节点为根的最长连续递减长度len2    //当前最长总长度为len1 + len2 - 1    //test case: [3,2,4,3,1,null,5,null,null,null,4,null,6]	Medium			
 250	Count Univalue Subtrees	自顶向下，通过返回值的方式。这里返回值设置为boolean，表示以该节点为root的subtree是否为univalue	Medium			
+653	Two Sum IV - Input is a BST	//自己做的。边加入hashset边查找。这里对root,left,right的遍历顺序可以随意调整。因为这种方法和是否排序没有关系    //方法二：先遍历一遍把递增序列存入list，再在list中双指针法查找target	Easy			
 										
 排序						
 349	Intersection of Two Arrays	HashSet的用法。遍历用for循环,复杂度为O(n)。还可以用sort、二分查找，复杂度为O(nlogn)	Easy			
