@@ -286,6 +286,8 @@ Array
 442	Find All Duplicates in an Array	和448一个套路	Medium			
 485	Max Consecutive Ones	我的解法设置left和right，答案解法只设置一个count。更简单	Easy			
 605	Can Place Flowers	LinkedIn面经。optimized方法: 当count>=n时，直接返回true。	Easy			
+243	Shortest Word Distance	一次遍历，同时记录p1和p2的位置，分别指向两个words	Easy			
+244	Shortest Word Distance II	关键在于：在两个index的list中查找相差最小的值。当index1 < index2时，我们需要增加index1的值，这样才能得到更小的距离。反之，增加index2的值。	Medium			
 
 链表Linked List						
 234	Palindrome Linked List	//Solution 1: 先通过fast和slow遍历一遍数组，再把右半部分反转   //Solution 2: beat 94.52%。reverse左半边，这样一次遍历就可以同时完成slow,fast的定位和左半边反转	Easy	链表反转，避免空指针操作！		
