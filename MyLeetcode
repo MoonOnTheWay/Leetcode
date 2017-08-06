@@ -339,6 +339,7 @@ Design
 346	Moving Average from Data Stream	需要保存size个数，因为i处的sum需要用到i - size位置的数，而i之后的数又需要用到i - size之后的数。所以要把这size个数都保存下来	Easy			
 271	Encode and Decode Strings	把每个字符串用该字符串长度 + ‘/’ 隔开	Medium			
 288	Unique Word Abbreviation	题意比较模糊，自习读题	Medium			
+170	Two Sum III - Data structure design	一种解法是：add复杂度O(n)，find复杂度O(1)；另一种是：add复杂度O(1)，find复杂度是O(n)。需要和面试官沟通	Easy			
 
 Stack						
 503	Next Greater Element II	方法一：暴力；方法二：Stack。很巧妙！	Medium	http://mp.weixin.qq.com/s?__biz=MzAwMDk1MTUyNw==&mid=2247484355&idx=1&sn=863e6f2ebafef26a89cd0d3e89b453dd&chksm=9ae0564bad97df5dba9ebbae7b018df81873b0ae83d8b30b7206002c081ef8f9c91824aadb1d&scene=21#wechat_redirect		
