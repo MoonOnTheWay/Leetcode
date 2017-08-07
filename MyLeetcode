@@ -180,6 +180,7 @@ DFS
 129	Sum Root to Leaf Numbers	自己做的太麻烦了，先转成arraylist再转成int，很复杂.答案思路，DFS过程中，每往下一层，sum乘10再加上当前val	Medium			
 124	Binary Tree Maximum Path Sum	//we need to keep track of the maxSum so far    //helper(root) returns the maximum branch containing root	Hard			
 339	Nested List Weight Sum	dfs	Easy			
+364	Nested List Weight Sum II	//My Solution: DFS    //Two passes: 第一个pass找到最大depth，第二个pass和339一样，递归求和//Solution 2: BFS    // Instead of multiplying by depth, add integers multiple times (by going level by level and adding the unweighted sum to the weighted sum after each level).	Medium			
 
 回溯法						
 401	Binary Watch	第一次回溯法！！做了挺久，记住这题，典型案例；位操作	Easy			
