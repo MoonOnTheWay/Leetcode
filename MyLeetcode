@@ -124,6 +124,7 @@ Binary Tree
 250	Count Univalue Subtrees	自顶向下，通过返回值的方式。这里返回值设置为boolean，表示以该节点为root的subtree是否为univalue	Medium			
 653	Two Sum IV - Input is a BST	//自己做的。边加入hashset边查找。这里对root,left,right的遍历顺序可以随意调整。因为这种方法和是否排序没有关系    //方法二：先遍历一遍把递增序列存入list，再在list中双指针法查找target	Easy			
 366	Find Leaves of Binary Tree	Bottom to Top，所以helper()函数应该有返回值，而不是传参！    //根据height加入到不同子list中，height的计算是从底往上。	Medium			
+199	Binary Tree Right Side View	bfs，dfs.记录height	Medium			
 										
 排序						
 349	Intersection of Two Arrays	HashSet的用法。遍历用for循环,复杂度为O(n)。还可以用sort、二分查找，复杂度为O(nlogn)	Easy			
