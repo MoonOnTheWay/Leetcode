@@ -28,9 +28,6 @@
 367	Valid Perfect Square	和67两个套路一样。注意乘法操作时用long型防止越界	Easy			
 392	Is Subsequence	对于follow-up，参考答案的解法，用binary search，O(N) time for pre-processing, O(Mlog?) for each S.	Medium	String.indexOf(target, i)：从i开始查找target		
 363	Max Sum of Rectangle No Larger Than K	//Time: O(Min{m, n} ^ 2 * Max{m, n} * log(Max{m, n}))    //可以设置sum[][]表示从(0, 0)到(i, j)的总和。为了简化空间复杂度，用一维数组代替。    //本题的简化版本是：max subarray sum no more than k. 即在数组中找小于等于k的最大sum	Hard	https://www.quora.com/Given-an-array-of-integers-A-and-an-integer-k-find-a-subarray-that-contains-the-largest-sum-subject-to-a-constraint-that-the-sum-is-less-than-k	TreeSet的运用。treeset.ceiling()	
-15	3Sum Closest	跳过相同的left, mid, right	Medium			
-16	3Sum Closest	三个指针	Medium			
-18	4Sum	在3Sum的基础上改进：先固定first，再固定second，然后就转化成3Sum，寻找可能的third和fourth。提高效率：对于first和second过小或者过大的情况，直接跳过	Medium			
 
 动态规划						
 174	Dungeon Game	动态规划。从右下角到左上角。dp[i][j]表示从(i, j)到右下角终点的最少血量。还可以优化空间复杂度。因为只用到i+1时刻的值，所以可以降维。(dp[j], dp[j + 1])相当于(dp[i + 1][j], dp[i][j + 1]) 	Hard	http://mp.weixin.qq.com/s/Zkir5lVALEaINd8YKBKqpw				
@@ -297,6 +294,10 @@ Array
 243	Shortest Word Distance	一次遍历，同时记录p1和p2的位置，分别指向两个words	Easy			
 244	Shortest Word Distance II	关键在于：在两个index的list中查找相差最小的值。当index1 < index2时，我们需要增加index1的值，这样才能得到更小的距离。反之，增加index2的值。	Medium			
 245	Shortest Word Distance III	自己做的，有重复数字的情况。每次更新较小的指针	Medium			
+15	3Sum Closest	跳过相同的left, mid, right	Medium			
+16	3Sum Closest	三个指针	Medium			
+259	3Sum Smaller	Solution 1: O(n^2)，和3Sum类似。Solution 2: O(n^2*logn),二分查找	Medium			
+18	4Sum	在3Sum的基础上改进：先固定first，再固定second，然后就转化成3Sum，寻找可能的third和fourth。提高效率：对于first和second过小或者过大的情况，直接跳过	Medium			
 
 链表Linked List						
 234	Palindrome Linked List	//Solution 1: 先通过fast和slow遍历一遍数组，再把右半部分反转   //Solution 2: beat 94.52%。reverse左半边，这样一次遍历就可以同时完成slow,fast的定位和左半边反转	Easy	链表反转，避免空指针操作！		
