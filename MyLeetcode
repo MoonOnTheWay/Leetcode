@@ -28,6 +28,9 @@
 367	Valid Perfect Square	和67两个套路一样。注意乘法操作时用long型防止越界	Easy			
 392	Is Subsequence	对于follow-up，参考答案的解法，用binary search，O(N) time for pre-processing, O(Mlog?) for each S.	Medium	String.indexOf(target, i)：从i开始查找target		
 363	Max Sum of Rectangle No Larger Than K	//Time: O(Min{m, n} ^ 2 * Max{m, n} * log(Max{m, n}))    //可以设置sum[][]表示从(0, 0)到(i, j)的总和。为了简化空间复杂度，用一维数组代替。    //本题的简化版本是：max subarray sum no more than k. 即在数组中找小于等于k的最大sum	Hard	https://www.quora.com/Given-an-array-of-integers-A-and-an-integer-k-find-a-subarray-that-contains-the-largest-sum-subject-to-a-constraint-that-the-sum-is-less-than-k	TreeSet的运用。treeset.ceiling()	
+15	3Sum Closest	跳过相同的left, mid, right	Medium			
+16	3Sum Closest	三个指针	Medium			
+18	4Sum	在3Sum的基础上改进：先固定first，再固定second，然后就转化成3Sum，寻找可能的third和fourth。提高效率：对于first和second过小或者过大的情况，直接跳过	Medium			
 
 动态规划						
 174	Dungeon Game	动态规划。从右下角到左上角。dp[i][j]表示从(i, j)到右下角终点的最少血量。还可以优化空间复杂度。因为只用到i+1时刻的值，所以可以降维。(dp[j], dp[j + 1])相当于(dp[i + 1][j], dp[i][j + 1]) 	Hard	http://mp.weixin.qq.com/s/Zkir5lVALEaINd8YKBKqpw				
@@ -261,9 +264,6 @@ Array
 169	Majority Element	Since the majority element appears more than n/2 times, if we remove two different elements from the array, the majority element will still appears more than n/2 times	Easy			
 229	Majority Element II	"如果是> 1/k，那么最多只有k - 1个答案，那就设置k - 1个majority。    //最后一定要再遍历一遍统计每个majority真实出现的次数，验证"	Medium			
 334	Increasing Triplet Subsequence	设一个min和一个max，当当前数大于max时，说明已经有三个数是增长趋势，return true	Medium			
-15	3Sum Closest	跳过相同的left, mid, right	Medium			
-16	3Sum Closest	三个指针	Medium			
-18	4Sum	在3Sum的基础上改进：先固定first，再固定second，然后就转化成3Sum，寻找可能的third和fourth。提高效率：对于first和second过小或者过大的情况，直接跳过	Medium			
 42	Trapping Rain Water	Solution 1: Fix the higher one and flow water from the lower part. Solution 2: 先从左到右一个pass确定每个位置的左边界，然后再从右往左一个pass确定每个位置的右边界，然后用较小的边界-height	Hard			
 532	K-diff Pairs in an Array	之所以用hashmap而不能用hashset，就是因为k = 0的情况，需要知道有多少个重复数字	Easy			
 289	Game of Life	自己做出来的	Medium			
