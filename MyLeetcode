@@ -250,6 +250,7 @@ DFS
 482	License Key Formatting	if(sb.length() % (K + 1) == K) sb.append('-');这步是关键	Medium			
 418	Sentence Screen Fitting	//将sentence展开，用空格隔开。从0开始，每次加cols即为下一行的第一个数    //但需要考虑：若对应的数字是‘ ’，不能以空白开头，所以需要加一，变为下一个数字    //若对应的数字左边也是数字，说明是一个数被分行了，需要减一直到左边是空白，此时指向的位置是一个数的开头	Medium			
 422	Valid Word Square	if(j >= m || i >= words.get(j).length() || words.get(i).charAt(j) != words.get(j).charAt(i)) return false;             //这两个边界条件很重要！防止words.get(j).charAt(i)的两处出现越界	Easy			
+554	Brick Wall	HashMap	Medium			
 
 Array						
 88	Merge Sorted Array	双指针问题	Easy			
