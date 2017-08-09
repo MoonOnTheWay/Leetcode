@@ -314,6 +314,8 @@ Array
 142	Linked List Cycle II	双指针，经典题	Medium			
 19	Remove Nth Node From End of List	虚拟头结点	Medium			
 86	Partition List	两种方法：1、建立两个list,一个存放<x的，一个存放>x的，最后合并两个list；2、和我的思路一致，遇到大的跳过，遇到小的插入到前面，cur保存当前>=x的序列的尾结点，pre保存前面<x的序列的尾结点	Medium			
+2	Add Two Numbers	求和问题，虚拟头结点	Medium			
+445	Add Two Numbers II	reverse list，通过stack实现。注意result也是颠倒的	Medium			
 
 Graph						
 332	Reconstruct Itinerary	hierholzers算法，欧拉路径：a trail which visits every edge exactly once	Medium	http://www.geeksforgeeks.org/hierholzers-algorithm-directed-graph/	1.ArrayList是实现了基于动态数组的数据结构，LinkedList基于链表的数据结构。  2.对于随机访问get和set，ArrayList觉得优于LinkedList，因为LinkedList要移动指针。 3.对于新增和删除操作add和remove，LinedList比较占优势，因为ArrayList要移动数据。	
