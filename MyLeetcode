@@ -254,6 +254,7 @@ DFS
 554	Brick Wall	HashMap	Medium			
 157	Read N Characters Given Read4	read只会被调用一次	Easy			
 158	Read N Characters Given Read4 II - Call multiple times	read会被调用多次。需要保留上一次read4操作读取的数组，以及对应的buffPointer。这样下一次read时，会把该位置之后的数先读取到数组中，再进行read4操作	Hard			
+7	Reverse Integer	对溢出的处理，很巧妙。和原来相比看是否一致	Easy			
 
 Array						
 88	Merge Sorted Array	双指针问题	Easy			
