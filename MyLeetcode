@@ -235,6 +235,7 @@ DFS
 424	Longest Repeating Character Replacement	仿照340。关键是：字符串的长度 - 出现次数最多的数字的个数 = 要替换的数字个数，这个个数要小于等于k	Medium			
 3	Longest Substring Without Repeating Characters	依然按照76的模板。是对于invalid的情况，make it valid	Medium			
 438	Find All Anagrams in a String	//和其他几个substring问题的区别在于：没有内部while循环，因为本题要求的是固定长度，而其他几个问题都是任意长度。    //所以必须在增加end指针的同时，增加begin指针	Easy			
+567	Permutation in String	和438解法一模一样。效率非常高。O(n), n = s2.length()	Medium			
 71	Simplify Path	自己的解法，比较难，没有用自带的函数；答案的解法利用split()函数简化操作	Medium			
 30	Substring with Concatenation of All Words	不太难，和答案的思路一样，在字符串中查找多个子字符串，一般可以用hashmap存储子字符串	Hard			
 150	Evaluate Reverse Polish Notation	stack,简单。String型数字转成Int型用Integer.parseInt()	Medium			
