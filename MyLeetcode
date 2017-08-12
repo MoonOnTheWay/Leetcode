@@ -309,6 +309,8 @@ Array
 11	Container With Most Water	自己想出来的。双指针。每次移动height较小的指针，因为这样才有可能得到更大的结果。如果移动height较大的指针，结果只会更小	Medium			
 48	Rotate Image	Solution 1: first reverse up to down, then swap the symmetry  Solution 2: 我的解法，CTPI也有这题	Medium			
 387	First Unique Character in a String	Two passes	Easy			
+186	Reverse Words in a String II	First reverse the whole array; Then reverse each word.	Medium			
+151	Reverse Words in a String	在166的基础上，需要trim leading, trailing and multiple spaces	Medium			
 
 链表Linked List						
 234	Palindrome Linked List	//Solution 1: 先通过fast和slow遍历一遍数组，再把右半部分反转   //Solution 2: beat 94.52%。reverse左半边，这样一次遍历就可以同时完成slow,fast的定位和左半边反转	Easy	链表反转，避免空指针操作！		
