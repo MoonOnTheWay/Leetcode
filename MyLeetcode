@@ -258,6 +258,7 @@ DFS
 158	Read N Characters Given Read4 II - Call multiple times	read会被调用多次。需要保留上一次read4操作读取的数组，以及对应的buffPointer。这样下一次read时，会把该位置之后的数先读取到数组中，再进行read4操作	Hard			
 7	Reverse Integer	对溢出的处理，很巧妙。和原来相比看是否一致	Easy			
 8	String to Integer (atoi)	不能按照7的溢出处理方法。因为对于"2147483648"，会错误。	Medium			
+204	Count Primes	Solution 1: 从2开始，对每个质数，把以它为因子的数都标记为true（不是质数） Solution 2: 先把count初始化为小于n的负数的个数，然后对于每个奇数，把以它为因子的数都标记为true（不是质数），同时count减一	Easy	对于for循环，如果初始值就越界的话，会导致结果越界！如果初始值不越界，就会在越界前停止！		
 
 Array						
 88	Merge Sorted Array	双指针问题	Easy			
