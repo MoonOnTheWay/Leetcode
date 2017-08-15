@@ -260,6 +260,7 @@ DFS
 8	String to Integer (atoi)	不能按照7的溢出处理方法。因为对于"2147483648"，会错误。	Medium			
 204	Count Primes	Solution 1: 从2开始，对每个质数，把以它为因子的数都标记为true（不是质数） Solution 2: 先把count初始化为小于n的负数的个数，然后对于每个奇数，把以它为因子的数都标记为true（不是质数），同时count减一	Easy	对于for循环，如果初始值就越界的话，会导致结果越界！如果初始值不越界，就会在越界前停止！		
 396	Rotate Function	O(n ^ 2)的解法，TLE。应该想到可能存在O(n)的解法，通过找规律：F(k) - F(k-1) = sum - n * Bk[0]	Medium			
+246	Strobogrammatic Number	答案解法：if (!"00 11 88 696".contains(num.charAt(i) + "" + num.charAt(j))) return false;	Easy			
 
 Array						
 88	Merge Sorted Array	双指针问题	Easy			
