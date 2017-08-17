@@ -162,6 +162,7 @@ BFS
 286	Walls and Gates	自己做的BFS，答案还有DFS解法也可以	Medium			
 127	Word Ladder	//Two End BFS    //非常巧妙！与单向BFS的不同在于，每次都从较小的set开始遍历，使得BFS的搜索范围不会太宽，提高效率	Medium			
 505	The Maze II	//和490不一样在于，490对于每一个拐角点，只需要访问一次，因为只需要判断能否到达该点即可。但本题需要计算最短距离，所以要把所有路线都考虑到。    //Dijkstra最短路径：计算一个节点到其他所有节点的最短路径。以起始点为中心向外层层扩展，直到扩展到终点为止。    //先把离起点最近的点加入队列，然后以这些点为中间点，重新计算从起点到其他点的距离。    //如果新的距离比原来的距离短，则更新起点到其他点的距离。然后再把这些点加入queue，重复上述过程。  	Medium	http://www.cnblogs.com/biyeymyhjob/archive/2012/07/31/2615833.html	//如果用pq的话，那么只要到达目的地，就一定找到了最小路径，直接返回	
+499	The Maze III	遇到hole会直接掉下去.不再用distance[][]，而是用对象数组points[][],因为不仅需要记录每个位置的最小距离，还要记录对应的路径。//本来以为规定d,l,r,u的顺序，就可以确保lexicographical order，但事实上并不能。例如：先l后，会先r，再u，导致最短路径被晚加入queue    	Hard		//还可以把queue改为，PriorityQueue<>((a, b) -> ((a.d == b.d) ? a.path.compareTo(b.path) : a.d - b.d))    //这样只要找到第一个到hole的路径，就可以直接返回，不需要继续遍历比较。	
 
 DFS						
 98	Validate Binary Search Tree	书上也有这题。三种解法！其中一种Iterative的方法是由In-order的iterative solution推广而来的。解法一涉及到java对象传递，min = root相当于min = new TreeNode(root)，改变了原来的地址引用，所以原来的引用对应的值不变，结果不对	Medium	http://mp.weixin.qq.com/s/LiQpm6LdLgdKi_qm8zB_zw	 java对象值传递和对象传递的总结 http://blog.csdn.net/beyond667/article/details/7849337	http://stackoverflow.com/questions/40480/is-java-pass-by-reference-or-pass-by-value
