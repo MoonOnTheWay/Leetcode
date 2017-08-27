@@ -110,7 +110,7 @@ Binary Tree
 331	Verify Preorder Serialization of a Binary Tree	用入度，出度来解决，对一个合法的二叉树，总的indegree+outdegree一定等于0	Medium			
 449	Serialize and Deserialize BST	自己做的，做了挺久。。我是用BFS，按层从上到下依次来。Solution 2: Pre-Order	Medium	Integer.parseInt(string）把String型数字转成int型。例如："12"转成12		
 297	Serialize and Deserialize Binary Tree	和449一样。fb常考题！	Hard			
-314	Binary Tree Vertical Order Traversal	刚开始用DFS，是错的。因为根据题目要求，from top to bottom，需要先遍历上层的，再遍历下层的，即BFS！//我用了TreeMap对index自动排序，也可以用hashmap，但要保存min和max index  //设置一个和queue完全同步的index队列，保存每个结点的index	Medium			
+314	Binary Tree Vertical Order Traversal	刚开始用DFS，是错的。因为根据题目要求，from top to bottom，需要先遍历上层的，再遍历下层的，即BFS！//我用了TreeMap对index自动排序，也可以用hashmap，但要保存min和max index  //设置一个和queue完全同步的index队列，保存每个结点的index	Medium	二刷。用HashMap		
 257	Binary Tree Paths	if(root.left == null && root.right == null)   //这里之前犯了一个错：不是在root==null时加入path，而是在叶子结点加入path。前者导致的问题是叶子结点被重复加入	Easy			
 285	Inorder Successor in BST	My Solution: 不仅适用于BST，也适用于所有binary tree，也可以通过调换root,left,right的位置，改编成pre-order，post-order。Solution 2: 按照BST的特点来解，可以稍作变换改编成寻找predecessor	Medium			
 156	Binary Tree Upside Down	//和226有点类似 。My Solution: 不是in-place。     //Solution 2: in-place，关键在于，在改变当前节点时，把当前节点的left和right先保存起来	Medium			
