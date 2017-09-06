@@ -322,6 +322,7 @@ Array
 73	Set Matrix Zeroes	用每行和每列的第一个数表示该行或该列是否含0。但要注意！当(0,0)位置为0时，可能表示第0行为0，或者第0列为0，所以需要两个boolean值标记第0行和第0列的情况	Medium			
 118	Pascal's Triangle	也可以用dp[][]来解	Easy			
 119	Pascal's Triangle II	只用一个list，也可以给118用此种解法。先在开头加1，再加和	Easy			
+670	Maximum Swap	//Use an array to record the last position of each number(0-9)    //Loop through num, for each digit in num, check if there exists a larger digit(from 9 to current digit) on its right    //If there exists, swap the two digits	Medium			
 
 链表Linked List						
 234	Palindrome Linked List	//Solution 1: 先通过fast和slow遍历一遍数组，再把右半部分反转   //Solution 2: beat 94.52%。reverse左半边，这样一次遍历就可以同时完成slow,fast的定位和左半边反转	Easy	链表反转，避免空指针操作！		
