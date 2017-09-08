@@ -395,6 +395,7 @@ Stack
 388	Longest Absolute File Path	注意：\t, \n的长度均为1，因为\是转义字符，不算入长度的计算.Solution 1: 用stack. Solution 2: 用数组代替stack	Medium			
 636	Exclusive Time of Functions	stack中存放任务id，用一个变量prevTime保存下一个任务的开始时间	Medium			
 536	Construct Binary Tree from String	两种方法：1.递归解法 2.stack，考虑的细节比较多，容易错	Medium			
+439	Ternary Expression Parser	My Solution: 参考了DFS的解法。 Solution 2：using stack	Medium			
 
 Heap(PriorityQueue)						
 239	Sliding Window Maximum	//第一次使用双向队列dequeue    //在dequeue中存储的数由左往右递减排列，相当于一个优先队列。每次窗口右移一格时，把超出k窗口大小的数移出，然后把小于新元素的数移出，再加入新元素。    //此时dequeue中最顶端（左）的数就是k范围内的最大数	Hard	ArrayDeque的使用		
