@@ -129,6 +129,7 @@ Binary Tree
 333	Largest BST Subtree	//本题非常好！刚开始的解法如下，自底向上，返回以每个结点为根的subtree的结点数。每次把左结点的值，右结点的值，和root的值比较    //错误的test case: [3,2,4,null,null,1]。这是因为：不能只比较左右结点和root的值，而应该把左子树的最大结点，右子树的最小结点，与root比较    //因此我们需要返回三个值！通过一个wrapper class来返回。也可以通过数组返回，int[3]。	Medium	和549类似		
 450	Delete Node in a BST	看答案的！root.right = deleteNode(root.right, rightMin.val);               //这步非常机智！after setting root's val as rightMin's val, recursively delete rightMin in the right subtree	Medium			
 545	Boundary of Binary Tree	题意比较复杂，按顺序依次加入	Medium			
+508	Most Frequent Subtree Sum	自己做的。设置一个全局变量记录maxCount，可以减少一次遍历	Medium			
 										
 排序						
 349	Intersection of Two Arrays	HashSet的用法。遍历用for循环,复杂度为O(n)。还可以用sort、二分查找，复杂度为O(nlogn)	Easy			
