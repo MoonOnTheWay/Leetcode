@@ -412,4 +412,5 @@ Trie
 211	Add and Search Word - Data structure design	仿照472的Trie Tree写法	Medium			
 208	Implement Trie (Prefix Tree)	Trie Tree的实现，再次巩固	Medium			
 425	Word Squares	把isEnd参数换成tails，因为本题每个单词都是等长的，不需要isEnd来标志。tails表示以该结点为前缀的所有单词字符串。	Hard			
+677	Map Sum Pairs	把isEnd参数换成value	Medium			
 				
