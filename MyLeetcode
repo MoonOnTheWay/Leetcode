@@ -266,6 +266,7 @@ DFS
 396	Rotate Function	O(n ^ 2)的解法，TLE。应该想到可能存在O(n)的解法，通过找规律：F(k) - F(k-1) = sum - n * Bk[0]	Medium			
 246	Strobogrammatic Number	答案解法：if (!"00 11 88 696".contains(num.charAt(i) + "" + num.charAt(j))) return false;	Easy			
 247	Strobogrammatic Number II	自底向上。递归	Medium			
+678	Valid Parenthesis String	My Solution: 递归解法，最坏情况下的复杂度为O(3^n)。Solution 2: O(n),非常机智。用low和high记录counts of unpaired '('的上下限。最后检查low是否为0，即为合法	Medium			
 
 Array						
 88	Merge Sorted Array	双指针问题	Easy			
