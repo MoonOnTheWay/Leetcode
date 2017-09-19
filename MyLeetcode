@@ -253,7 +253,7 @@ DFS
 12	Integer to Roman	答案更直接，把每个范围内的整位数理出来	Medium			
 273	Integer to English Words	1-19归为一类，10-90的整十归为一类，剩下的递归处理	Hard			
 168	Excel Sheet Column Title	每次在左边插入新字母	Easy			
-214	Shortest Palindrome	答案很巧妙。。j最终的位置表示：j左边的字符串是最长回文字符串，或者是j左边的字符在j的右边都逆序出现过，所以要继续递归检查直到为回文字符串	Hard			
+214	Shortest Palindrome	Solution总结的很好。Solution 1: j最终的位置表示：j左边的字符串是最长回文字符串，或者是j左边的字符在j的右边都逆序出现过，所以要继续递归检查直到为回文字符串 //Solution 2: 参考28的KMP算法,利用KMP的lps数组，找到从0开始的最长回文字符串    //把原字符串s处理为：s + "#" + reverse(s) //Solution 3: 和KMP思路一样，找到从0开始的最长回文字符串，然后reverse the remaining part as the prefix    //复杂度其实很高，O(n ^ 2)，相当于对于每个end(从右往左)，判断end左边的字符串是否会回文	Hard			
 482	License Key Formatting	if(sb.length() % (K + 1) == K) sb.append('-');这步是关键	Medium			
 418	Sentence Screen Fitting	//将sentence展开，用空格隔开。从0开始，每次加cols即为下一行的第一个数    //但需要考虑：若对应的数字是‘ ’，不能以空白开头，所以需要加一，变为下一个数字    //若对应的数字左边也是数字，说明是一个数被分行了，需要减一直到左边是空白，此时指向的位置是一个数的开头	Medium			
 422	Valid Word Square	if(j >= m || i >= words.get(j).length() || words.get(i).charAt(j) != words.get(j).charAt(i)) return false;             //这两个边界条件很重要！防止words.get(j).charAt(i)的两处出现越界	Easy			
