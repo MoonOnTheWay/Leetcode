@@ -151,6 +151,7 @@ Binary Tree
 315	Count of Smaller Numbers After Self	Solution 1: MergeSort: count[i] = count of nums[j] - nums[i] < 0 with j > i . Solution 2: 从右到左建立Binary Search Tree    //每个结点除了value外，还要记录sum和dup值：sum表示比该结点小的结点个数，dup表示当前结点重复结点的个数	Hard	MergeSort		
 327	Count of Range Sum	count[i] = count of lower <= S[j] - S[i] <= upper with j > i	Hard	MergeSort		
 274	H-Index		bucket sort的思路。如果在每个i循环内，对i之前的所有位置+1，复杂度会变成O(n^2)，所以这里不对i之前进行操作，后面用新的循环,在新的循环内，完成从右到左的累加	Medium			
+506	Relative Ranks	先创建二维数组，对应value和index，然后对二维数组按照value值进行排序	Easy			
 						
 BFS						
 542	01 Matrix	"DFS,没做出来……不剪枝的话会超时。剪枝效果也不会比BFS好，因为不能预先确定0的位置，可能会导致深度太深，以及重复计算。 答案思路：先确定0的位置，然后先把每个0周围四个位置的距离算好（1），再把每个1周围四个位置算好（2）……层层计算下去。BFS思想，用queue实现，先进先出"	Medium			
